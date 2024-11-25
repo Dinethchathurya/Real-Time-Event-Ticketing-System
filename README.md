@@ -21,8 +21,8 @@ This project implements a **Real-Time Event Ticketing System** designed to handl
 - **Real-Time Updates**: The frontend receives real-time updates about ticket availability, ensuring customers are aware of the current status of ticket sales.
 
 ### Node.js Backend
-- **Ticket Management**: Handles ticket addition, availability checks, and purchases. It communicates with both the React frontend and Java CLI.
-- **Database Integration**: Interacts with a database (e.g., MySQL) to store and retrieve ticket data. The backend ensures that operations are synchronized and prevent race conditions during concurrent transactions.
+- **Ticket Management**: Handles ticket addition, availability checks, and purchases. It communicates with both the React front end and Java CLI.
+- **Database Integration**: Interacts with a database (e.g., MySQL) to store and retrieve ticket data. The backend ensures that operations are synchronized and prevents race conditions during concurrent transactions.
 
 ## Features
 - **Concurrent Ticket Management**: Supports multiple vendors adding tickets and multiple customers purchasing tickets simultaneously.
@@ -36,5 +36,4 @@ To get started with the project, clone the repository and follow the setup instr
 - **React Frontend**: See `frontend/README.md` for instructions on setting up and running the frontend.
 - **Node.js Backend**: See `backend/README.md` for instructions on setting up the backend and connecting to the database.
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for more information.
+
