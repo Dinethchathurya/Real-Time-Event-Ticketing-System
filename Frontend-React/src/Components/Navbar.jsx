@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/logoiit.png";
-
+import navLinks from "../constants/Menu";
+import { Link } from "react-router-dom"; 
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,15 +39,15 @@ function Navbar() {
 
           {/* Navigation Links (Desktop) */}
           <div className="hidden lg:flex items-center space-x-6 ">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Events</a>
-            <a href="#">Host an Event</a>
-            <a href="#">Contact Us</a>
-            <a href="#" className="btn btn-primary px-6 font-medium">
-              Sign Up
-            </a>
+            {/* Navigation Links (Desktop) */}
+
+            {navLinks.map((link) => (
+              <Link key={link.id} href={link.path}>
+                {link.label}
+              </Link>
+            ))}
           </div>
+          
         </div>
       </div>
 
@@ -72,15 +73,15 @@ function Navbar() {
             </svg>
           </button>
         </div>
-        <div className="flex flex-col items-left space-y-4 mt-10 px-5">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Events</a>
-          <a href="#">Host an Event</a>
-          <a href="#">Contact Us</a>
-          <a href="#" className="btn btn-primary px-6 w-40">
+        <div className="flex flex-col items-left space-y-6 mt-10 px-5">
+          {navLinks.map((link) => (
+            <Link key={link.id} to={link.path}>
+              {link.label}
+            </Link>
+          ))}
+          {/* <a href="#" className="btn btn-primary px-6 w-40">
             Sign Up
-          </a>
+          </a> */}
         </div>
       </div>
     </nav>
