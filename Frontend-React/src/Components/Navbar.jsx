@@ -13,7 +13,7 @@ function Navbar() {
           {/* Logo and Brand Name */}
           <div className="flex items-center">
             <img src={Logo} alt="Logo" className="h-10 w-auto" />
-            <a className="pl-2 text-2xl font-bold">IIT EVENTS</a>
+            <a href="/" className="pl-2 text-2xl font-bold">IIT EVENTS</a>
           </div>
 
           {/* Hamburger Menu (Visible on Mobile) */}
@@ -42,9 +42,9 @@ function Navbar() {
             {/* Navigation Links (Desktop) */}
 
             {navLinks.map((link) => (
-              <Link key={link.id} href={link.path}>
-                {link.label}
-              </Link>
+              
+                <a key={link.id} href={link.path} className="hover:underline">{link.label}</a>
+              
             ))}
           </div>
           
@@ -75,9 +75,7 @@ function Navbar() {
         </div>
         <div className="flex flex-col items-left space-y-6 mt-10 px-5">
           {navLinks.map((link) => (
-            <Link key={link.id} to={link.path}>
-              {link.label}
-            </Link>
+            <a key={link.id} href={link.path} className="hover:underline active:text-primary ">{link.label}</a>
           ))}
           {/* <a href="#" className="btn btn-primary px-6 w-40">
             Sign Up

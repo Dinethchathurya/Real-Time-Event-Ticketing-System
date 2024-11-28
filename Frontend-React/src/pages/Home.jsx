@@ -13,7 +13,6 @@ function Home() {
       <Hero2 />
       <Upcoming />
       <Categories />
-      <Footer />
     </div>
   )
 }

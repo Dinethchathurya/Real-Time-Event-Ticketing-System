@@ -7,6 +7,10 @@ import About from "./pages/About";
 import Events from "./pages/Event";
 import Contact from "./pages/Contact";
 import HostEvent from "./pages/HostEvent";
+import Footer from "./Components/Footer";
+import EventDetails from "./pages/EventDetails";
+import Login from "./pages/Login";  
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -18,7 +22,11 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/hostevent" element={<HostEvent />} />
+        <Route path="/eventdetails" element={<EventDetails />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

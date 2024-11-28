@@ -7,9 +7,7 @@ function Footer() {
     <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
   <nav className="grid grid-flow-col gap-4">
     {NavLinks.map((link) => (
-      <Link key={link.id} href={link.path}>
-        {link.label}
-      </Link>
+      <a key={link.id} href={link.path} className="hover:underline">{link.label}</a>
     ))}
   </nav>
   <nav>
