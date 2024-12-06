@@ -2,7 +2,7 @@ import React from 'react';
 
 function FormCard({ title, fields, buttonText, onSubmit }) {
   return (
-    <div className="bg-secondary p-6 rounded-lg shadow-lg max-w-sm w-full text-white max-md:mb-10">
+    <div className="bg-secondary p-6 rounded-lg shadow-lg max-w-md w-full text-white max-md:mb-10">
       <h2 className="text-2xl font-bold text-center mb-4 text-white">{title}</h2>
       <form onSubmit={onSubmit}>
         {fields.map((field, index) => (
