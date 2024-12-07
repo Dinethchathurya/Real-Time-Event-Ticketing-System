@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -7,7 +8,9 @@ function About() {
         <div className="container mx-auto section_px">
           <div className="hero-content flex-col lg:flex-row">
             <div>
-              <h1 className="">Welcome to IIT University’s Event Booking Platform!</h1>
+              <h1 className="">
+                Welcome to IIT University’s Event Booking Platform!
+              </h1>
               <p className="py-3 opacity-80 pb-5">
                 At IIT, we believe in creating memorable experiences that bring
                 our community together. Our platform is your one-stop
@@ -18,22 +21,25 @@ function About() {
               </p>
               <h2>Our Mission</h2>
               <p className="py-3 opacity-80 pb-5">
-                To empower students, faculty, and alumni by providing an easy-to-use platform that connects everyone through shared experiences, fostering collaboration, growth, and lasting memories.
+                To empower students, faculty, and alumni by providing an
+                easy-to-use platform that connects everyone through shared
+                experiences, fostering collaboration, growth, and lasting
+                memories.
               </p>
               <h2>What We Offer</h2>
               <ul className="py-3 opacity-80 pb-5 list-disc list-inside">
                 <li>
-                  <strong>Diverse Events:</strong> Explore everything from academic
-                  workshops and cultural festivals to sports tournaments and
-                  social gatherings.
+                  <strong>Diverse Events:</strong> Explore everything from
+                  academic workshops and cultural festivals to sports
+                  tournaments and social gatherings.
                 </li>
                 <li>
-                  <strong>Seamless Booking:</strong> Enjoy hassle-free registration
-                  for free and paid events.
+                  <strong>Seamless Booking:</strong> Enjoy hassle-free
+                  registration for free and paid events.
                 </li>
                 <li>
-                  <strong>Community Engagement:</strong> Stay connected with peers,
-                  faculty, and the wider IIT network.
+                  <strong>Community Engagement:</strong> Stay connected with
+                  peers, faculty, and the wider IIT network.
                 </li>
               </ul>
               <h2>Why Choose Us?</h2>
@@ -49,7 +55,9 @@ function About() {
                 excitement. Discover events, expand your horizons, and make the
                 most of your time at IIT University.
               </p>
-              <button className="btn btn-primary px-10">Explore Now</button>
+              <Link to="/events">
+                <button className="btn btn-primary px-10">Explore Now</button>
+              </Link>
             </div>
           </div>
         </div>
