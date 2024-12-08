@@ -1,0 +1,116 @@
+# version: '3.8'
+# services:
+#   frontend:
+#     build:
+#       context: ./Frontend-React
+#     ports:
+#       - '3000:3000'
+#     depends_on:
+#       - backend
+#     environment:
+#       - REACT_APP_BACKEND_URL=http://localhost:5000
+#     volumes:
+#       - ./frontend:/usr/src/app
+#       - /usr/src/app/node_modules
+#     command: npm start
+
+#   backend:
+#     build:
+#       context: ./Backend-Node
+#     ports:
+#       - '5001:5000'
+#     depends_on:
+#       - db
+#     environment:
+#       - DB_HOST=db
+#       - DB_USER=root
+#       - DB_PASSWORD=example
+#       - DB_NAME=mydb
+#     volumes:
+#       - ./backend:/usr/src/app
+#       - /usr/src/app/node_modules
+#     command: npm run dev
+
+#   db:
+#     image: mysql:latest
+#     ports:
+#       - '3306:3306'
+#     environment:
+#       MYSQL_ROOT_PASSWORD: example
+#       MYSQL_DATABASE: mydb
+#     volumes:
+#       - db_data:/var/lib/mysql
+#       - ./db:/docker-entrypoint-initdb.d
+
+#   phpmyadmin:
+#     image: phpmyadmin:latest
+#     ports:
+#       - '8080:80'
+#     environment:
+#       PMA_HOST: db
+#       MYSQL_ROOT_PASSWORD: example
+#     depends_on:
+#       - db
+
+# volumes:
+#   db_data:
+
+
+
+
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./Frontend-React
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_BACKEND_URL=http://localhost:5001 # Change to port 5001 or update backend port
+    volumes:
+      - ./Frontend-React:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm start
+
+  backend:
+    build:
+      context: ./Backend-Node
+    ports:
+      - '5001:5000'  # Port mapping remains the same
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=example
+      - DB_NAME=mydb
+    volumes:
+      - ./Backend-Node:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run dev
+
+  db:
+    image: mysql:latest
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: mydb
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db:/docker-entrypoint-initdb.d
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: example
+    depends_on:
+      - db
+
+volumes:
+  db_data:
