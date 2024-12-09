@@ -24,8 +24,8 @@ const javaCLI = spawn('java', ['-jar', '../CLI-java/new/out/artifacts/new_jar/ne
 
 // Listen for output from the Java CLI
 javaCLI.stdout.on('data', (data) => {
-  console.log(`Java CLI output: ${data}`);
-  // You can process this real-time data or send it to the frontend
+    console.log(`Received real-time data from Java CLI: ${data.toString()}`);
+    // You can process or forward the real-time data to your frontend or other services here
 });
 
 // Handle errors from the Java CLI
