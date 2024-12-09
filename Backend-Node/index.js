@@ -2,8 +2,6 @@
 import express from "express";
 import { spawn } from 'child_process';
 
-
-
 const app = express();
 
 // Define the port number
@@ -12,15 +10,13 @@ const port = 5001;
 // Middleware to parse JSON requests
 app.use(express.json());
 
+const totalTickets = 100;
+const ticketReleaseRate = 12;
+const customerRetrievalRate = 10;
+const maximumTicketCapacity = 100;
+const ticketQuantity = 20;
 
-
-
-
-
-
-
-// Start the Java CLI process
-const javaCLI = spawn('java', ['-jar', '../CLI-java/new/out/artifacts/new_jar/new.jar']);
+const javaCLI = spawn('java', ['-jar', '../CLI-java/new/out/artifacts/new_jar/new.jar', totalTickets, ticketReleaseRate, customerRetrievalRate, maximumTicketCapacity, ticketQuantity]);
 
 // Listen for output from the Java CLI
 javaCLI.stdout.on('data', (data) => {
@@ -37,8 +33,6 @@ javaCLI.stderr.on('data', (data) => {
 javaCLI.on('close', (code) => {
   console.log(`Java CLI process exited with code ${code}`);
 });
-
-
 
 
 // Define a simple route
