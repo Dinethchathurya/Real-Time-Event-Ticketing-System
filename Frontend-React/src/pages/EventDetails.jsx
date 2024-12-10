@@ -2,12 +2,29 @@ import React, { useState } from "react";
 import { MdDateRange } from "react-icons/md";
 import EventDetailsCard from "../Components/EventDetailsCard";
 import {useForm} from "react-hook-form";
+import axios from "axios";
 
-function EventDetails() {
+
+function stop (event) {
+    console.log("cliked");
+}
+
+function EventDetails()  {
+
 
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
-  console.log(watch("example"));
+  const onSubmit = (data) => {
+    console.log("Form data:", data);
+    // Send form data to backend (Node.js) on start button click
+    axios.post("http://localhost:5001/start", data)
+      .then(response => {
+        console.log("Start response:", response.data);
+      })
+      .catch(error => {
+        console.error("Error in start request:", error);
+      });
+  };
+
   
   return (
     <div className="bg-gray-100 py-10">
@@ -73,6 +90,16 @@ function EventDetails() {
                       {...register("customerRetrievalRate")} 
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
+                    <label htmlFor="name" className="block mb-1">
+                      Ticket Quantity 
+                    </label>
+                    <input
+                      type="ticketQuantity"
+                      id="ticketQuantity"
+                      placeholder="Ticket Quantity"
+                      {...register("ticketQuantity")} 
+                      className="input input-bordered w-full bg-gray-200 text-black mb-2"
+                    />
                     <label htmlFor="maxTicketCapacity" className="block mb-1">
                       Maximum Ticket Capacity
                     </label>
@@ -89,13 +116,14 @@ function EventDetails() {
                     >
                       Start
                     </button>
-                    <button
-                      type="submit"
+                    
+                  </form>
+                  <button
+                      onClick={stop}
                       className="btn btn-block bg-success text-white hover:bg-gray-800 border-none mt-5"
                     >
                       Stop
                     </button>
-                  </form>
                 </div>
               </div>
             </div>
