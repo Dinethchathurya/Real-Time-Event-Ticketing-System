@@ -9,7 +9,7 @@ function Event() {
 
         <div className="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 gap-4 p-2 c">
           <EventCard
-            image="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            image="https://images.pexels.com/photos/167514/pexels-photo-167514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             title="Musical Show"
             price="200"
             location="Main Entrance"

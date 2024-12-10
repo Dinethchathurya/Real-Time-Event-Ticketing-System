@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/logoiit.png";
+import Logo from "../assets/logo.png";
 import navLinks from "../constants/Menu";
 import { Link } from "react-router-dom"; 
 
@@ -11,9 +11,9 @@ function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo and Brand Name */}
-          <div className="flex items-center">
-            <img src={Logo} alt="Logo" className="h-10 w-auto" />
-            <a href="/" className="pl-2 text-2xl font-bold">IIT EVENTS</a>
+          <div className="flex items-end">
+            <img src={Logo} alt="Logo" className="h-10 w-auto mb-1" />
+            <a href="/" className=" text-2xl font-bold ">EVENTS</a>
           </div>
 
           {/* Hamburger Menu (Visible on Mobile) */}

@@ -13,7 +13,11 @@ function EventCard({ image, title, price, location }) {
             March
           </div>
         </div>
-        <img src={image} alt={title} className="w-full h-58 object-cover" />
+        <img
+          src={image}
+          alt={title}
+          className="w-[500px] h-[200px] object-cover object-center"
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title text-lg font-semibold">{title}</h2>
@@ -23,7 +27,9 @@ function EventCard({ image, title, price, location }) {
           <p>{location}</p>
         </div>
         <div className="card-actions justify-end">
-          <button className="btn rounded-full border-gray-200 h-5 w-32 text-primary">Buy Now</button>
+          <button className="btn rounded-full border-gray-200 h-5 w-32 text-primary">
+            Buy Now
+          </button>
         </div>
       </div>
     </div>
