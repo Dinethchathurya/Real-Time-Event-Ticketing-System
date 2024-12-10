@@ -119,6 +119,10 @@ function EventDetails() {
                           value :1,
                           message :"Please enter a number grater than zero "
                         },
+                        pattern: {
+                          value: /^[0-9]*$/,
+                          message: "Only numeric values are allowed",
+                        },
                       })}
                       className="input input-bordered w-full bg-gray-200 text-black mb-2 "
                     />
@@ -127,17 +131,21 @@ function EventDetails() {
                         {errors.numberOfTickets.message}
                       </p> 
                     )}
-                    <label htmlFor="numberOfTickets" className="block mb-1">
+                    <label htmlFor="ticketReleaseRate" className="block mb-1">
                       Ticket Release Rate
                     </label>
                     <input
                       type="number"
                       id="ticketReleaseRate"
                       {...register("ticketReleaseRate", {
-                        required: true,
+                        required: "Ticket quantity is required",
                         min: {
                           value :1,
                           message : "Please enter a number grater than zero .",
+                        },
+                        pattern: {
+                          value: /^[0-9]*$/,
+                          message: "Only numeric values are allowed",
                         },
                       })}
                       placeholder="Ticket ReleaseRate"
@@ -157,12 +165,17 @@ function EventDetails() {
                       id="customerRetrievalRate"
                       placeholder="Customer Retrieval Rate"
                       {...register("customerRetrievalRate", {
-                        required: true,
+                        required: "Ticket quantity is required",
                         min: {
                           value: 1,
                           message: "Please enter a number grater than zero .",
                         },
+                        pattern: {
+                          value: /^[0-9]*$/,
+                          message: "Only numeric values are allowed",
+                        },
                       })}
+                      pattern="[0-9]*" 
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
                     {errors.customerRetrievalRate && (
@@ -178,6 +191,7 @@ function EventDetails() {
                       id="maxTicketCapacity"
                       placeholder="Max Ticket Capacity"
                       {...register("maxTicketCapacity", {
+                        required :"Ticket quantity is required",
                         validate: (value, fromValues) => {
                           if (value <= 0) {
                             return "Please enter a number greater than zero";
@@ -191,7 +205,12 @@ function EventDetails() {
                           console.log("correct validations maxTicketCapacity");
                           return true;
                         },
+                        pattern: {
+                          value: /^[0-9]*$/,
+                          message: "Only numeric values are allowed",
+                        },
                       })}
+                      pattern="[0-9]*" 
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
                     {errors.maxTicketCapacity && (
@@ -207,6 +226,7 @@ function EventDetails() {
                       id="ticketQuantity"
                       placeholder="Ticket Quantity can retrieve at a time"
                       {...register("ticketQuantity", {
+                        required :"Ticket quantity is required",
                         validate: (value, formValues) => {
                           if (value <= 0) {
                             console.log(
@@ -223,7 +243,12 @@ function EventDetails() {
                           console.log("correct ticket quantity");
                           return true;
                         },
+                        pattern: {
+                          value: /^[0-9]*$/,
+                          message: "Only numeric values are allowed",
+                        },
                       })}
+                      
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
                     {errors.ticketQuantity && (
