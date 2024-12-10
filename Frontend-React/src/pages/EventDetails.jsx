@@ -111,7 +111,7 @@ function EventDetails() {
                       Total Number of Tickets
                     </label>
                     <input
-                      type="numberOfTickets"
+                      type="number"
                       id="numberOfTickets"
                       placeholder="Total Number of Tickets"
                       {...register("numberOfTickets", { required: true, min: 1 })}
@@ -121,7 +121,7 @@ function EventDetails() {
                       Ticket Release Rate
                     </label>
                     <input
-                      type="ticketReleaseRate"
+                      type="number"
                       id="ticketReleaseRate"
                       {...register("ticketReleaseRate", {required:true, min :1})}
                       placeholder="Ticket ReleaseRate"
@@ -131,17 +131,17 @@ function EventDetails() {
                       Customer Retrieval Rate
                     </label>
                     <input
-                      type="customerRetrievalRate"
+                      type="number"
                       id="customerRetrievalRate"
                       placeholder="Customer Retrieval Rate"
-                      {...register("customerRetrievalRate", {required:true, min:1})}
+                      {...register("customerRetrievalRate", {required:true, min:{value :1, message :"Customer retrieval rate must be greater than zero",}})}
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
                     <label htmlFor="maxTicketCapacity" className="block mb-1">
                       Maximum Ticket Capacity
                     </label>
                     <input
-                      type="maxTicketCapacity"
+                      type="number"
                       id="maxTicketCapacity"
                       placeholder="Max Ticket Capacity"
                       {...register("maxTicketCapacity", {validate : (value, fromValues)=>{
@@ -152,7 +152,7 @@ function EventDetails() {
                           console.log("maximum ticket capacity can not be exceed total amount of tickets");
                           return "maximum ticket capacity can not be exceed total amount of tickets";
                         }
-                        console.log("correct validations");
+                        console.log("correct validations maxTicketCapacity");
                         return true;
                       }})}
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
@@ -161,7 +161,7 @@ function EventDetails() {
                       Ticket Quantity
                     </label>
                     <input
-                      type="ticketQuantity"
+                      type="number"
                       id="ticketQuantity"
                       placeholder="Ticket Quantity can retrieve at a time"
                       {...register("ticketQuantity",{validate : (value, formValues) => {
@@ -171,9 +171,9 @@ function EventDetails() {
                         }
                         if (value > formValues.maxTicketCapacity) {
                           console.log("Ticket quantity cannot exceed the maximum ticket capacity");
-                          return "Ticket quantity cannot exceed the maximum ticket capacity";
+                          return "Ticket quantity cannot exceed the maximum ticket capacity ";
                         }
-                        console.log("correct validations");
+                        console.log("correct ticket quantity");
                         return true;
                       },})}
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
