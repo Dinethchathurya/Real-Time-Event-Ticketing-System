@@ -104,7 +104,6 @@ public class Main {
         }
 
 
-
         confi.setTotalTickets(totalTickets);
         confi.setTicketReleaseRate(ticketReleaseRate);
         confi.setCustomerRetrievalRate(customerRetrievalRate);
@@ -130,7 +129,6 @@ public class Main {
             Thread vendorThread = new Thread(vendors[i], "Vendor Id:" + i);
             vendorThread.start();
         }
-
 
         Customer[] customers = new Customer[2];
         for (int i = 0; i < customers.length; i++) {

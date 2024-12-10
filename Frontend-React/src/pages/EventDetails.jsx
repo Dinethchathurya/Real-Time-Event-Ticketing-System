@@ -17,15 +17,14 @@ function EventDetails() {
   } = useForm();
   const onSubmit = (data) => {
     console.log("Form data:", data);
-    // Send form data to backend (Node.js) on start button click
-    axios
-      .post("http://localhost:5001/start", data)
-      .then((response) => {
-        console.log("Start response:", response.data);
-      })
-      .catch((error) => {
-        console.error("Error in start request:", error);
-      });
+    // axios
+    //   .post("http://localhost:5001/start", data)
+    //   .then((response) => {
+    //     console.log("Start response:", response.data);
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error in start request:", error);
+    //   });
   };
 
   return (
@@ -54,8 +53,12 @@ function EventDetails() {
                       segments that will push your limits and leave you with an
                       incredible sense of accomplishment.
                     </p>
-
-                    <div className="flex flex-row gap-6 mt-5">
+                    <h2 className="text-2xl mt-4">Ticket price</h2>
+                    <p className="text-xl font-normal text-primary">Rs 100</p>
+                  </div>
+                </div>
+                <div>
+                <div className="flex flex-row gap-6 mt-5">
                       <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
                         <p>Tickets</p>
                         <p className="text-2xl font-semibold">30</p>
@@ -69,12 +72,8 @@ function EventDetails() {
                         <p className="text-2xl font-semibold">30</p>
                       </div>
                     </div>
-                    <h2 className="text-2xl mt-4">Ticket price</h2>
-                    <p className="text-xl font-normal text-primary">Rs 100</p>
-                  </div>
-                </div>
-                <div>
                   <div className="w-full h-[200px] overflow-auto border border-gray-300 mt-6">
+                    
                     <div className="w-full h-[200px] bg-gray-100">
                       <p className="p-4">
                         This is a scrollable div. Add your content here. It will
@@ -115,7 +114,7 @@ function EventDetails() {
                       type="numberOfTickets"
                       id="numberOfTickets"
                       placeholder="Total Number of Tickets"
-                      {...register("numberOfTickets")}
+                      {...register("numberOfTickets", { required: true, min: 1 })}
                       className="input input-bordered w-full bg-gray-200 text-black mb-2 "
                     />
                     <label htmlFor="numberOfTickets" className="block mb-1">
@@ -124,7 +123,7 @@ function EventDetails() {
                     <input
                       type="ticketReleaseRate"
                       id="ticketReleaseRate"
-                      {...register("ticketReleaseRate")}
+                      {...register("ticketReleaseRate", {required:true, min :1})}
                       placeholder="Ticket ReleaseRate"
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
@@ -135,17 +134,7 @@ function EventDetails() {
                       type="customerRetrievalRate"
                       id="customerRetrievalRate"
                       placeholder="Customer Retrieval Rate"
-                      {...register("customerRetrievalRate")}
-                      className="input input-bordered w-full bg-gray-200 text-black mb-2"
-                    />
-                    <label htmlFor="name" className="block mb-1">
-                      Ticket Quantity
-                    </label>
-                    <input
-                      type="ticketQuantity"
-                      id="ticketQuantity"
-                      placeholder="Ticket Quantity"
-                      {...register("ticketQuantity")}
+                      {...register("customerRetrievalRate", {required:true, min:1})}
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
                     <label htmlFor="maxTicketCapacity" className="block mb-1">
@@ -155,9 +144,41 @@ function EventDetails() {
                       type="maxTicketCapacity"
                       id="maxTicketCapacity"
                       placeholder="Max Ticket Capacity"
-                      {...register("maxTicketCapacity")}
+                      {...register("maxTicketCapacity", {validate : (value, fromValues)=>{
+                        if (value <= 0) {
+                          return "Please enter a number greater than zero";
+                        }
+                        if (value >fromValues.numberOfTickets) {
+                          console.log("maximum ticket capacity can not be exceed total amount of tickets");
+                          return "maximum ticket capacity can not be exceed total amount of tickets";
+                        }
+                        console.log("correct validations");
+                        return true;
+                      }})}
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
+                    <label htmlFor="name" className="block mb-1">
+                      Ticket Quantity
+                    </label>
+                    <input
+                      type="ticketQuantity"
+                      id="ticketQuantity"
+                      placeholder="Ticket Quantity can retrieve at a time"
+                      {...register("ticketQuantity",{validate : (value, formValues) => {
+                        if (value <= 0) {
+                          console.log("Please enter a number greater than zero");
+                          return "Please enter a number greater than zero";
+                        }
+                        if (value > formValues.maxTicketCapacity) {
+                          console.log("Ticket quantity cannot exceed the maximum ticket capacity");
+                          return "Ticket quantity cannot exceed the maximum ticket capacity";
+                        }
+                        console.log("correct validations");
+                        return true;
+                      },})}
+                      className="input input-bordered w-full bg-gray-200 text-black mb-2"
+                    />
+                    
                     <button
                       type="submit"
                       className="btn btn-block bg-primary text-white hover:bg-gray-800 border-none mt-5"
