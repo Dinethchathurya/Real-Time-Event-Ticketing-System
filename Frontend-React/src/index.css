@@ -5,14 +5,19 @@
 h1{
   @apply text-[#3A3A3A] text-3xl sm:text-4xl font-bold
 }
+h2{
+  @apply text-[#3A3A3A] text-3xl sm:text-xl font-bold
+}
 
 .btn-primary{
   @apply hover:bg-secondary border-none hover:text-white rounded-full 
 }
 
 a {
-  @apply hover:text-primary active:text-primary
+  @apply hover:text-primary active:text-primary 
 }
+
+
 
 
 

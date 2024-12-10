@@ -4,7 +4,7 @@ function Hero2() {
   return (
     <div className="hero bg-secondary   py-10 ">
       <div className="container mx-auto section_px">
-      <div className="hero-content flex-col lg:flex-row">
+      <div className="hero-content flex-col lg:flex-row ">
         <div>
           <h1 className="text-white">Where Memories Begin – IIT Event Booking Platform</h1>
           <p className="py-3 text-white opacity-80 pb-5">
