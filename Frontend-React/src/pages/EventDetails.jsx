@@ -4,6 +4,7 @@ import EventDetailsCard from "../Components/EventDetailsCard";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
+
 function stop(event) {
   console.log("cliked");
 }
