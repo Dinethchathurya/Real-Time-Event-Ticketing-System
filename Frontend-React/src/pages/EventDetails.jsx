@@ -58,22 +58,21 @@ function EventDetails() {
                   </div>
                 </div>
                 <div>
-                <div className="flex flex-row gap-6 mt-5">
-                      <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
-                        <p>Tickets</p>
-                        <p className="text-2xl font-semibold">30</p>
-                      </div>
-                      <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
-                        <p>Tickets</p>
-                        <p className="text-2xl font-semibold">30</p>
-                      </div>
-                      <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
-                        <p>Tickets</p>
-                        <p className="text-2xl font-semibold">30</p>
-                      </div>
+                  <div className="flex flex-row gap-6 mt-5">
+                    <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
+                      <p>Tickets</p>
+                      <p className="text-2xl font-semibold">30</p>
                     </div>
+                    <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
+                      <p>Tickets</p>
+                      <p className="text-2xl font-semibold">30</p>
+                    </div>
+                    <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
+                      <p>Tickets</p>
+                      <p className="text-2xl font-semibold">30</p>
+                    </div>
+                  </div>
                   <div className="w-full h-[200px] overflow-auto border border-gray-300 mt-6">
-                    
                     <div className="w-full h-[200px] bg-gray-100">
                       <p className="p-4">
                         This is a scrollable div. Add your content here. It will
@@ -114,19 +113,42 @@ function EventDetails() {
                       type="number"
                       id="numberOfTickets"
                       placeholder="Total Number of Tickets"
-                      {...register("numberOfTickets", { required: true, min: 1 })}
+                      {...register("numberOfTickets", {
+                        required: "Ticket quantity is required",
+                        min: {
+                          value :1,
+                          message :"Please enter a number grater than zero "
+                        },
+                      })}
                       className="input input-bordered w-full bg-gray-200 text-black mb-2 "
                     />
+                    {errors.numberOfTickets && (
+                      <p className="text-red-500">
+                        {errors.numberOfTickets.message}
+                      </p> 
+                    )}
                     <label htmlFor="numberOfTickets" className="block mb-1">
                       Ticket Release Rate
                     </label>
                     <input
                       type="number"
                       id="ticketReleaseRate"
-                      {...register("ticketReleaseRate", {required:true, min :1})}
+                      {...register("ticketReleaseRate", {
+                        required: true,
+                        min: {
+                          value :1,
+                          message : "Please enter a number grater than zero .",
+                        },
+                      })}
                       placeholder="Ticket ReleaseRate"
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
+                    {errors.ticketReleaseRate && (
+                      <p className="text-red-500">
+                        {errors.ticketReleaseRate.message}
+                      </p> 
+                    )}
+
                     <label htmlFor="name" className="block mb-1">
                       Customer Retrieval Rate
                     </label>
@@ -134,9 +156,20 @@ function EventDetails() {
                       type="number"
                       id="customerRetrievalRate"
                       placeholder="Customer Retrieval Rate"
-                      {...register("customerRetrievalRate", {required:true, min:{value :1, message :"Customer retrieval rate must be greater than zero",}})}
+                      {...register("customerRetrievalRate", {
+                        required: true,
+                        min: {
+                          value: 1,
+                          message: "Please enter a number grater than zero .",
+                        },
+                      })}
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
+                    {errors.customerRetrievalRate && (
+                      <p className="text-red-500">
+                        {errors.customerRetrievalRate.message}
+                      </p>
+                    )}
                     <label htmlFor="maxTicketCapacity" className="block mb-1">
                       Maximum Ticket Capacity
                     </label>
@@ -144,19 +177,28 @@ function EventDetails() {
                       type="number"
                       id="maxTicketCapacity"
                       placeholder="Max Ticket Capacity"
-                      {...register("maxTicketCapacity", {validate : (value, fromValues)=>{
-                        if (value <= 0) {
-                          return "Please enter a number greater than zero";
-                        }
-                        if (value >fromValues.numberOfTickets) {
-                          console.log("maximum ticket capacity can not be exceed total amount of tickets");
-                          return "maximum ticket capacity can not be exceed total amount of tickets";
-                        }
-                        console.log("correct validations maxTicketCapacity");
-                        return true;
-                      }})}
+                      {...register("maxTicketCapacity", {
+                        validate: (value, fromValues) => {
+                          if (value <= 0) {
+                            return "Please enter a number greater than zero";
+                          }
+                          if (value > fromValues.numberOfTickets) {
+                            console.log(
+                              "maximum ticket capacity can not be exceed total amount of tickets"
+                            );
+                            return "maximum ticket capacity can not be exceed total amount of tickets";
+                          }
+                          console.log("correct validations maxTicketCapacity");
+                          return true;
+                        },
+                      })}
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
+                    {errors.maxTicketCapacity && (
+                      <p className="text-red-500">
+                        {errors.maxTicketCapacity.message}
+                      </p> 
+                    )}
                     <label htmlFor="name" className="block mb-1">
                       Ticket Quantity
                     </label>
@@ -164,21 +206,32 @@ function EventDetails() {
                       type="number"
                       id="ticketQuantity"
                       placeholder="Ticket Quantity can retrieve at a time"
-                      {...register("ticketQuantity",{validate : (value, formValues) => {
-                        if (value <= 0) {
-                          console.log("Please enter a number greater than zero");
-                          return "Please enter a number greater than zero";
-                        }
-                        if (value > formValues.maxTicketCapacity) {
-                          console.log("Ticket quantity cannot exceed the maximum ticket capacity");
-                          return "Ticket quantity cannot exceed the maximum ticket capacity ";
-                        }
-                        console.log("correct ticket quantity");
-                        return true;
-                      },})}
+                      {...register("ticketQuantity", {
+                        validate: (value, formValues) => {
+                          if (value <= 0) {
+                            console.log(
+                              "Please enter a number greater than zero"
+                            );
+                            return "Please enter a number greater than zero";
+                          }
+                          if (value > formValues.maxTicketCapacity) {
+                            console.log(
+                              "Ticket quantity cannot exceed the maximum ticket capacity"
+                            );
+                            return "Ticket quantity cannot exceed the maximum ticket capacity ";
+                          }
+                          console.log("correct ticket quantity");
+                          return true;
+                        },
+                      })}
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
-                    
+                    {errors.ticketQuantity && (
+                      <p className="text-red-500">
+                        {errors.ticketQuantity.message}
+                      </p> 
+                    )}
+
                     <button
                       type="submit"
                       className="btn btn-block bg-primary text-white hover:bg-gray-800 border-none mt-5"
