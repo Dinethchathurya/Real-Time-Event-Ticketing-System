@@ -35,62 +35,69 @@ function EventDetails() {
           <div>
             <h1 className="">Music Event</h1>
 
-            <div className="flex flex-col md:flex-row gap-6">
-              <div className="w-full md:w-1/3">
-                <EventDetailsCard
-                  date="25/02/2025"
-                  time="5.30pm"
-                  location="Main hall"
-                />
-                <h2 className="text-2xl mt-4">Ticket price</h2>
-                <p className="text-xl font-normal text-primary">Rs 100</p>
-              </div>
-              <div className="w-full md:w-1/3 mt-4">
-                <p>
-                  Get ready to test your endurance and athleticism in our
-                  thrilling duathlon! Whether you’re a seasoned athlete or a
-                  first-time racer, this event is designed for everyone.
-                  Challenge yourself in a combination of running and biking
-                  segments that will push your limits and leave you with an
-                  incredible sense of accomplishment.
-                </p>
-
-                <div className="flex flex-row gap-6 mt-5">
-                  <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
-                    <p>Tickets</p>
-                    <p className="text-2xl font-semibold">30</p>
+            <div className="flex flex-col lg:flex-row gap-6">
+              <div className="w-full lg:w-2/3">
+                <div className="flex flex-col md:flex-row gap-4">
+                  <div className="w-full md:w-1/2">
+                    <EventDetailsCard
+                      date="25/02/2025"
+                      time="5.30pm"
+                      location="Main hall"
+                    />
                   </div>
-                  <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
-                    <p>Tickets</p>
-                    <p className="text-2xl font-semibold">30</p>
-                  </div>
-                  <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
-                    <p>Tickets</p>
-                    <p className="text-2xl font-semibold">30</p>
-                  </div>
-                </div>
-                <div className="w-full h-[200px] overflow-auto border border-gray-300 mt-4">
-                  <div className="w-full h-[200px] bg-gray-100">
-                    <p className="p-4">
-                      This is a scrollable div. Add your content here. It will
-                      scroll both horizontally and vertically if it overflows.
-                      This is a scrollable div. Add your content here. It will
-                      scroll both horizontally and vertically if it overflows.
-                      This is a scrollable div. Add your content here. It will
-                      scroll both horizontally and vertically if it overflows.
-                      This is a scrollable div. Add your content here. It will
-                      scroll both horizontally and vertically if it overflows.
-                      This is a scrollable div. Add your content here. It will
-                      scroll both horizontally and vertically if it overflows.
-                      This is a scrollable div. Add your content here. It will
-                      scroll both horizontally and vertically if it overflows.
-                      This is a scrollable div. Add your content here. It will
-                      scroll both horizontally and vertically if it overflows.
+                  <div className="w-full md:w-1/2">
+                    <p>
+                      Get ready to test your endurance and athleticism in our
+                      thrilling duathlon! Whether you’re a seasoned athlete or a
+                      first-time racer, this event is designed for everyone.
+                      Challenge yourself in a combination of running and biking
+                      segments that will push your limits and leave you with an
+                      incredible sense of accomplishment.
                     </p>
+
+                    <div className="flex flex-row gap-6 mt-5">
+                      <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
+                        <p>Tickets</p>
+                        <p className="text-2xl font-semibold">30</p>
+                      </div>
+                      <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
+                        <p>Tickets</p>
+                        <p className="text-2xl font-semibold">30</p>
+                      </div>
+                      <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
+                        <p>Tickets</p>
+                        <p className="text-2xl font-semibold">30</p>
+                      </div>
+                    </div>
+                    <h2 className="text-2xl mt-4">Ticket price</h2>
+                    <p className="text-xl font-normal text-primary">Rs 100</p>
+                  </div>
+                </div>
+                <div>
+                  <div className="w-full h-[200px] overflow-auto border border-gray-300 mt-6">
+                    <div className="w-full h-[200px] bg-gray-100">
+                      <p className="p-4">
+                        This is a scrollable div. Add your content here. It will
+                        scroll both horizontally and vertically if it overflows.
+                        This is a scrollable div. Add your content here. It will
+                        scroll both horizontally and vertically if it overflows.
+                        This is a scrollable div. Add your content here. It will
+                        scroll both horizontally and vertically if it overflows.
+                        This is a scrollable div. Add your content here. It will
+                        scroll both horizontally and vertically if it overflows.
+                        This is a scrollable div. Add your content here. It will
+                        scroll both horizontally and vertically if it overflows.
+                        This is a scrollable div. Add your content here. It will
+                        scroll both horizontally and vertically if it overflows.
+                        This is a scrollable div. Add your content here. It will
+                        scroll both horizontally and vertically if it overflows.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/3">
+
+              <div className="w-full lg:w-1/3">
                 <div className="bg-secondary p-6 rounded-lg shadow-lg w-full text-white max-md:mb-10 mt-4">
                   <div>
                     <label htmlFor="name" className="block mb-1 underline">
