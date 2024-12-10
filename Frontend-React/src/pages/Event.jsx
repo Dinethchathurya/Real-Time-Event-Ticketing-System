@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import EventCard from "../Components/EventCard";
 
 function Event() {
@@ -14,29 +14,10 @@ function Event() {
             price="200"
             location="Main Entrance"
           />
-          <EventCard
-            image="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            title="Art Exhibition"
-            price="150"
-            location="Art Hall"
-          />
-          <EventCard
-            image="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            title="Art Exhibition"
-            price="150"
-            location="Art Hall"
-          />
-          <EventCard
-            image="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            title="Art Exhibition"
-            price="150"
-            location="Art Hall"
-          />
         </div>
       </div>
     </div>
-    
-  )
+  );
 }
 
-export default Event
+export default Event;
