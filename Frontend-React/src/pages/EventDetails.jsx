@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MdDateRange } from "react-icons/md";
 import EventDetailsCard from "../Components/EventDetailsCard";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-
 
 function stop(event) {
   console.log("cliked");
 }
 
 function EventDetails() {
+  const [messages, setMessages] = useState([]);
   const {
     register,
     handleSubmit,
@@ -18,15 +18,62 @@ function EventDetails() {
   } = useForm();
   const onSubmit = (data) => {
     console.log("Form data:", data);
-    // axios
-    //   .post("http://localhost:5001/start", data)
-    //   .then((response) => {
-    //     console.log("Start response:", response.data);
-    //   })
-    //   .catch((error) => {
-    //     console.error("Error in start request:", error);
-    //   });
+    axios
+      .post("http://localhost:5001/start", data)
+      .then((response) => {
+        console.log("Start response:", response.data);
+      })
+      .then(() => {
+        websocket();
+      })
+      .catch((error) => {
+        console.error("Error in start request:", error);
+      });
   };
+
+  function websocket() {
+    console.log("called");
+    const socket = new WebSocket("ws://localhost:8082");
+
+    socket.onopen = () => {
+      console.log("Connected to the WebSocket server");
+      socket.send("Hello from the React client!");
+    };
+
+    // socket.onmessage = (event) => {
+    //   socket.onmessage = (event) => {
+    //     if (event.data instanceof Blob) {
+    //       // Create a FileReader to convert Blob to string
+    //       const reader = new FileReader();
+    //       reader.onload = () => {
+    //         setMessages((prevMessages) => [...prevMessages, reader.result]); // Append new message to the existing array
+    //       };
+    //       reader.readAsText(event.data);
+    //     } else {
+    //       setMessages((prevMessages) => [...prevMessages, reader.result]); // Append new message to the existing array
+    //     }
+    //   };
+    // };
+    socket.onmessage = (event) => {
+      if (event.data instanceof Blob) {
+        const reader = new FileReader();
+        reader.onload = () => {
+          setMessages((prevMessages) => [...prevMessages, reader.result]); // Append new message to the existing array
+        };
+        reader.readAsText(event.data);
+      } else {
+        setMessages((prevMessages) => [...prevMessages, event.data]); // Append new message if it's already a string
+      }
+    };
+
+    socket.onerror = (error) => {
+      console.error("WebSocket error:", error);
+    };
+
+    return () => {
+      socket.close();
+    };
+  }
 
   return (
     <div className="bg-gray-100 py-10">
@@ -75,22 +122,14 @@ function EventDetails() {
                   </div>
                   <div className="w-full h-[200px] overflow-auto border border-gray-300 mt-6">
                     <div className="w-full h-[200px] bg-gray-100">
-                      <p className="p-4">
-                        This is a scrollable div. Add your content here. It will
-                        scroll both horizontally and vertically if it overflows.
-                        This is a scrollable div. Add your content here. It will
-                        scroll both horizontally and vertically if it overflows.
-                        This is a scrollable div. Add your content here. It will
-                        scroll both horizontally and vertically if it overflows.
-                        This is a scrollable div. Add your content here. It will
-                        scroll both horizontally and vertically if it overflows.
-                        This is a scrollable div. Add your content here. It will
-                        scroll both horizontally and vertically if it overflows.
-                        This is a scrollable div. Add your content here. It will
-                        scroll both horizontally and vertically if it overflows.
-                        This is a scrollable div. Add your content here. It will
-                        scroll both horizontally and vertically if it overflows.
-                      </p>
+                      {messages
+                        .slice()
+                        .reverse()
+                        .map((msg, index) => (
+                          <p key={index} className="p-0">
+                            {msg}
+                          </p>
+                        ))}
                     </div>
                   </div>
                 </div>
@@ -117,8 +156,8 @@ function EventDetails() {
                       {...register("numberOfTickets", {
                         required: "Ticket quantity is required",
                         min: {
-                          value :1,
-                          message :"Please enter a number grater than zero "
+                          value: 1,
+                          message: "Please enter a number grater than zero ",
                         },
                         pattern: {
                           value: /^[0-9]*$/,
@@ -130,7 +169,7 @@ function EventDetails() {
                     {errors.numberOfTickets && (
                       <p className="text-red-500">
                         {errors.numberOfTickets.message}
-                      </p> 
+                      </p>
                     )}
                     <label htmlFor="ticketReleaseRate" className="block mb-1">
                       Ticket Release Rate
@@ -141,8 +180,8 @@ function EventDetails() {
                       {...register("ticketReleaseRate", {
                         required: "Ticket quantity is required",
                         min: {
-                          value :1,
-                          message : "Please enter a number grater than zero .",
+                          value: 1,
+                          message: "Please enter a number grater than zero .",
                         },
                         pattern: {
                           value: /^[0-9]*$/,
@@ -155,7 +194,7 @@ function EventDetails() {
                     {errors.ticketReleaseRate && (
                       <p className="text-red-500">
                         {errors.ticketReleaseRate.message}
-                      </p> 
+                      </p>
                     )}
 
                     <label htmlFor="name" className="block mb-1">
@@ -176,7 +215,7 @@ function EventDetails() {
                           message: "Only numeric values are allowed",
                         },
                       })}
-                      pattern="[0-9]*" 
+                      pattern="[0-9]*"
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
                     {errors.customerRetrievalRate && (
@@ -192,7 +231,7 @@ function EventDetails() {
                       id="maxTicketCapacity"
                       placeholder="Max Ticket Capacity"
                       {...register("maxTicketCapacity", {
-                        required :"Ticket quantity is required",
+                        required: "max Ticket Capacity is required",
                         validate: (value, fromValues) => {
                           if (value <= 0) {
                             return "Please enter a number greater than zero";
@@ -211,13 +250,13 @@ function EventDetails() {
                           message: "Only numeric values are allowed",
                         },
                       })}
-                      pattern="[0-9]*" 
+                      pattern="[0-9]*"
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
                     {errors.maxTicketCapacity && (
                       <p className="text-red-500">
                         {errors.maxTicketCapacity.message}
-                      </p> 
+                      </p>
                     )}
                     <label htmlFor="name" className="block mb-1">
                       Ticket Quantity
@@ -227,7 +266,7 @@ function EventDetails() {
                       id="ticketQuantity"
                       placeholder="Ticket Quantity can retrieve at a time"
                       {...register("ticketQuantity", {
-                        required :"Ticket quantity is required",
+                        required: "Ticket quantity is required",
                         validate: (value, formValues) => {
                           if (value <= 0) {
                             console.log(
@@ -249,13 +288,12 @@ function EventDetails() {
                           message: "Only numeric values are allowed",
                         },
                       })}
-                      
                       className="input input-bordered w-full bg-gray-200 text-black mb-2"
                     />
                     {errors.ticketQuantity && (
                       <p className="text-red-500">
                         {errors.ticketQuantity.message}
-                      </p> 
+                      </p>
                     )}
 
                     <button

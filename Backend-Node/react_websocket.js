@@ -1,20 +1,40 @@
 import WebSocket, { WebSocketServer }  from "ws";
 
-export function reactWebSocket() {
-const wss = new WebSocketServer({ port: 8082 });
+let wss = new WebSocketServer({ port: 8082 });
 
-wss.on('connection', (ws) => {
-  console.log('A new client connected');
+export function createReactWebSocket() {
 
-  ws.send('Hello from the server!');
+    wss.on('open', function open() {
+        ws.send('something');
+      });
+      
+// wss.on('connection', (ws) => {
+//     console.log('A new client connected');
 
-  ws.on('message', (message) => {
-    console.log('Received: ' + message);
-  });
+//     ws.send('Hello from the Node server!');
 
-  ws.on('close', () => {
-    console.log('Client disconnected');
-  });
-});
+//     ws.on('message', (message) => {
+//         console.log('Received: ' + message);
+//     });
+//     ws.on('connection', (ws) => {
+//         ws.send(message);
+//     });
+//     setInterval(() => {
+//       const message = `Message sent at ${new Date().toISOString()}`;
+//       ws.send(message);
+//       console.log('Sent:', message);
+//     }, 5000); 
+
+//     ws.on('close', () => {
+//         console.log('Client disconnected');
+//     });
+
+// });
 
 }
+
+// export function sentDataToWebSocket(message) {
+//     wss.on('connection', (ws) => {
+//         ws.send(message);
+//     });
+// }
