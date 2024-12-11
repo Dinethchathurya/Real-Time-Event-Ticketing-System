@@ -1,7 +1,7 @@
 import { WebSocketServer }  from "ws";
 
 let reactWebSocket = new WebSocketServer({ port: 8082 });
-
+// for real time data trasver 
 
 
 export function createReactWebSocket() {

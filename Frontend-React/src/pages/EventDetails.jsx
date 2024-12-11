@@ -4,24 +4,24 @@ import EventDetailsCard from "../Components/EventDetailsCard";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
-
 function stop() {
   console.log("cliked");
   axios
-      .post("http://localhost:5001/stop")
-      .then((response) => {
-        console.log("Start response:", response.data);
-      })
-      .catch((error) => {
-        console.error("Error in start request:", error);
-      });
+    .post("http://localhost:5001/stop")
+    .then((response) => {
+      console.log("Start response:", response.data);
+    })
+    .catch((error) => {
+      console.error("Error in start request:", error);
+    });
 }
 
 function EventDetails() {
   const [messages, setMessages] = useState([]);
-  const [currentTicketAvailability, setCurrentTicketAvailability] = useState('0');
-  const [totalTicketsToRelease, setTotalTicketsToRelease] = useState('0');
-  const [totalTicketsSold, setTotalTicketsSold] = useState('0');
+  const [currentTicketAvailability, setCurrentTicketAvailability] =
+    useState("0");
+  const [totalTicketsToRelease, setTotalTicketsToRelease] = useState("0");
+  const [totalTicketsSold, setTotalTicketsSold] = useState("0");
 
   const {
     register,
@@ -30,7 +30,6 @@ function EventDetails() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-
     axios
       .post("http://localhost:5001/start", data)
       .then((response) => {
@@ -46,7 +45,6 @@ function EventDetails() {
   };
 
   function websocket() {
-
     const socket = new WebSocket("ws://localhost:8083");
 
     socket.onopen = () => {
@@ -54,15 +52,14 @@ function EventDetails() {
       socket.send("Hello from the React client!");
     };
     socket.onmessage = (event) => {
-
       if (event.data instanceof Blob) {
         const reader = new FileReader();
         reader.onload = () => {
-          setMessages((prevMessages) => [...prevMessages, reader.result]); 
+          setMessages((prevMessages) => [...prevMessages, reader.result]);
         };
         reader.readAsText(event.data);
       } else {
-        setMessages((prevMessages) => [...prevMessages, event.data]); 
+        setMessages((prevMessages) => [...prevMessages, event.data]);
       }
     };
 
@@ -89,14 +86,14 @@ function EventDetails() {
         reader.onload = () => {
           console.log(reader.result);
           const data = JSON.parse(reader.result);
-          setCurrentTicketAvailability(() => data[0]); 
-          setTotalTicketsToRelease(() => data[1]); 
-          setTotalTicketsSold(() => data[2]); 
+          setCurrentTicketAvailability(() => data[0]);
+          setTotalTicketsToRelease(() => data[1]);
+          setTotalTicketsSold(() => data[2]);
         };
         reader.readAsText(event.data);
       } else {
         console.log(event.data);
-        //setMessages(() => [event.data]); 
+        //setMessages(() => [event.data]);
       }
     };
 
@@ -143,15 +140,21 @@ function EventDetails() {
                   <div className="flex flex-row gap-6 mt-5">
                     <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
                       <p>Current Ticket Availability</p>
-                      <p className="text-2xl font-semibold">{currentTicketAvailability}</p>
+                      <p className="text-2xl font-semibold">
+                        {currentTicketAvailability}
+                      </p>
                     </div>
                     <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
                       <p>Total Tickets To Release</p>
-                      <p className="text-2xl font-semibold">{totalTicketsToRelease}</p>
+                      <p className="text-2xl font-semibold">
+                        {totalTicketsToRelease}
+                      </p>
                     </div>
                     <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
                       <p>Total Tickets Sold</p>
-                      <p className="text-2xl font-semibold">{totalTicketsSold}</p>
+                      <p className="text-2xl font-semibold">
+                        {totalTicketsSold}
+                      </p>
                     </div>
                   </div>
                   <div className="w-full h-[200px] overflow-auto border border-gray-300 mt-6">

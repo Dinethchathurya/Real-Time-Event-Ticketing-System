@@ -22,7 +22,9 @@ public class TicketPool {
         this.maximumCapacity = maximumCapacity;
         this.tickets = new LinkedList<>();
 
+        // this is a websocket for send data to node server
         webSocketServer = new WebSocketServer(new InetSocketAddress(8081)) {
+
             @Override
             public void onOpen(WebSocket conn, ClientHandshake handshake) {
                 System.out.println("New connection from " + conn.getRemoteSocketAddress());
@@ -64,7 +66,6 @@ public class TicketPool {
         notifyAll();
         Logger.log("Ticket added by - " + Thread.currentThread().getName()  + " - current size is - " + tickets.size());
         TotalTicketsReleaseByVender += 1;
-        System.out.println("TotalTicketsReleaseByVender = " + TotalTicketsReleaseByVender);
         sendTicketCount();
     }
     public synchronized Ticket removeTickets() {
@@ -80,14 +81,11 @@ public class TicketPool {
         Logger.log( "Ticket bought by - " + Thread.currentThread().getName()  + " - current size is - " + tickets.size() + " -: Ticket is - " + ticket ) ;
         notifyAll();
         TotalTicketsSoled += 1;
-        System.out.println("TotalTicketsSoled = " + TotalTicketsSoled);
         sendTicketCount();
         return removeTickets();
     }
     private void sendTicketCount() {
-        System.out.println("TotalTicketsReleaseByVender from send method"+TotalTicketsReleaseByVender);
         int TotalTicketsReleaseByVenders = TotalTicketsReleaseByVender;
-
         for (WebSocket conn : webSocketServer.getConnections()) {
 
             List<Object> dataList = new ArrayList<>();

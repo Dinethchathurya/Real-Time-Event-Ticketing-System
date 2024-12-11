@@ -20,7 +20,7 @@ public class Main {
         maximumTicketCapacity = Integer.parseInt(args[3]);
         ticketQuantity = Integer.parseInt(args[4]);
 
-        }else {
+        } else {
             System.out.println("*".repeat(50));
             System.out.println("\tWelcome to the Real-Time-Ticketing System!!!\t\t");
             System.out.println("*".repeat(50));

@@ -1,7 +1,7 @@
 import { WebSocketServer }  from "ws";
 
 let cli_logs_websocket = new WebSocketServer({ port: 8083 });
-
+// this websocket for send data to react front end (CLI logs )
 
 
 export function createConnectionCliLogsWebsocket() {
