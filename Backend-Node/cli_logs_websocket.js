@@ -1,11 +1,11 @@
 import { WebSocketServer }  from "ws";
 
-let reactWebSocket = new WebSocketServer({ port: 8082 });
+let cli_logs_websocket = new WebSocketServer({ port: 8083 });
 
 
 
-export function createReactWebSocket() {
-    reactWebSocket.on("connection", (ws) => {
+export function createConnectionCliLogsWebsocket() {
+    cli_logs_websocket.on("connection", (ws) => {
       console.log("A new client connected");
       ws.send("Hello from the Node server!");
       ws.on("close", () => {
@@ -14,8 +14,8 @@ export function createReactWebSocket() {
     });
   }
   
-  export function senddatatoreactfrontend(data) {
-    reactWebSocket.clients.forEach(function each(client) {
+  export function sendCliLogsWebsocket(data) {
+    cli_logs_websocket.clients.forEach(function each(client) {
       if (client.readyState === WebSocket.OPEN) {
         client.send(data); 
         console.log("Data sent to React client: " + data);

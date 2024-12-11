@@ -1,5 +1,7 @@
 import { spawn } from "child_process";
 
+import {createConnectionCliLogsWebsocket, sendCliLogsWebsocket, }from "./cli_logs_websocket.js";
+
 let javaCLI;
 
 export async function connectCLI(
@@ -18,16 +20,22 @@ export async function connectCLI(
     maximumTicketCapacity,
     ticketQuantity,
   ]);
-
+  
+  createConnectionCliLogsWebsocket();
+  
   javaCLI.stdout.on("data", (data) => {
+    sendCliLogsWebsocket(data.toString());
     console.log(`Received real-time data from Java CLI: ${data.toString()}`);
+    
   });
 
   javaCLI.stderr.on("data", (data) => {
+    sendCliLogsWebsocket(`Error from Java CLI: ${data}`);
     console.error(`Error from Java CLI: ${data}`);
   });
 
   javaCLI.on("close", (code) => {
+    sendCliLogsWebsocket(`Java CLI process exited ${code}`);
     console.log(`Java CLI process exited with code ${code}`);
   });
 }

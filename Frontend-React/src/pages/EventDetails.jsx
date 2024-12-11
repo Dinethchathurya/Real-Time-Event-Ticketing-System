@@ -4,6 +4,7 @@ import EventDetailsCard from "../Components/EventDetailsCard";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
+
 function stop() {
   console.log("cliked");
   axios
@@ -18,6 +19,10 @@ function stop() {
 
 function EventDetails() {
   const [messages, setMessages] = useState([]);
+  const [currentTicketAvailability, setCurrentTicketAvailability] = useState('30');
+  const [totalTicketsToRelease, setTotalTicketsToRelease] = useState('30');
+  const [totalTicketsSold, setTotalTicketsSold] = useState('30');
+
   const {
     register,
     handleSubmit,
@@ -41,27 +46,12 @@ function EventDetails() {
 
   function websocket() {
     console.log("called");
-    const socket = new WebSocket("ws://localhost:8082");
+    const socket = new WebSocket("ws://localhost:8083");
 
     socket.onopen = () => {
       console.log("Connected to the WebSocket server");
       socket.send("Hello from the React client!");
     };
-
-    // socket.onmessage = (event) => {
-    //   socket.onmessage = (event) => {
-    //     if (event.data instanceof Blob) {
-    //       // Create a FileReader to convert Blob to string
-    //       const reader = new FileReader();
-    //       reader.onload = () => {
-    //         setMessages((prevMessages) => [...prevMessages, reader.result]); // Append new message to the existing array
-    //       };
-    //       reader.readAsText(event.data);
-    //     } else {
-    //       setMessages((prevMessages) => [...prevMessages, reader.result]); // Append new message to the existing array
-    //     }
-    //   };
-    // };
     socket.onmessage = (event) => {
       if (event.data instanceof Blob) {
         const reader = new FileReader();
@@ -71,6 +61,35 @@ function EventDetails() {
         reader.readAsText(event.data);
       } else {
         setMessages((prevMessages) => [...prevMessages, event.data]); // Append new message if it's already a string
+      }
+    };
+
+    socket.onerror = (error) => {
+      console.error("WebSocket error:", error);
+    };
+
+    return () => {
+      socket.close();
+    };
+  }
+
+  function realTimeDatawebsocket() {
+    console.log("called");
+    const socket = new WebSocket("ws://localhost:8082");
+
+    socket.onopen = () => {
+      console.log("Connected to the WebSocket server");
+      socket.send("Hello from the React client!");
+    };
+    socket.onmessage = (event) => {
+      if (event.data instanceof Blob) {
+        const reader = new FileReader();
+        reader.onload = () => {
+          setMessages(() => [ reader.result]); // Append new message to the existing array
+        };
+        reader.readAsText(event.data);
+      } else {
+        setMessages(() => [event.data]); // Append new message if it's already a string
       }
     };
 
@@ -116,16 +135,16 @@ function EventDetails() {
                 <div>
                   <div className="flex flex-row gap-6 mt-5">
                     <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
-                      <p>Tickets</p>
-                      <p className="text-2xl font-semibold">30</p>
+                      <p>Current Ticket Availability</p>
+                      <p className="text-2xl font-semibold">{currentTicketAvailability}</p>
                     </div>
                     <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
-                      <p>Tickets</p>
-                      <p className="text-2xl font-semibold">30</p>
+                      <p>Total Tickets To Release</p>
+                      <p className="text-2xl font-semibold">{totalTicketsToRelease}</p>
                     </div>
                     <div className="w-1/3 bg-slate-300 justify-center flex flex-col items-center p-3">
-                      <p>Tickets</p>
-                      <p className="text-2xl font-semibold">30</p>
+                      <p>Total Tickets Sold</p>
+                      <p className="text-2xl font-semibold">{totalTicketsSold}</p>
                     </div>
                   </div>
                   <div className="w-full h-[200px] overflow-auto border border-gray-300 mt-6">

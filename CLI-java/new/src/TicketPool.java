@@ -11,7 +11,6 @@ public class TicketPool {
     private  Queue<Ticket> tickets ;
     private int maximumCapacity;
     private WebSocketServer webSocketServer;
-//    private int port = 8081;
 
     public TicketPool(int maximumCapacity) {
 
