@@ -1,16 +1,21 @@
 //package lk.sadewni.oop.cw;
+import com.google.gson.Gson;
 import org.java_websocket.server.WebSocketServer;
 import org.java_websocket.WebSocket;
 import org.java_websocket.handshake.ClientHandshake;
 
 import java.net.InetSocketAddress;
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class TicketPool {
     private  Queue<Ticket> tickets ;
     private int maximumCapacity;
     private WebSocketServer webSocketServer;
+    private int TotalTicketsSoled ;
+    private int TotalTicketsReleaseByVender ;
 
     public TicketPool(int maximumCapacity) {
 
@@ -58,6 +63,8 @@ public class TicketPool {
         this.tickets.add(ticket);
         notifyAll();
         Logger.log("Ticket added by - " + Thread.currentThread().getName()  + " - current size is - " + tickets.size());
+        TotalTicketsReleaseByVender += 1;
+        System.out.println("TotalTicketsReleaseByVender = " + TotalTicketsReleaseByVender);
         sendTicketCount();
     }
     public synchronized Ticket removeTickets() {
@@ -72,12 +79,25 @@ public class TicketPool {
         Ticket ticket = tickets.poll();
         Logger.log( "Ticket bought by - " + Thread.currentThread().getName()  + " - current size is - " + tickets.size() + " -: Ticket is - " + ticket ) ;
         notifyAll();
+        TotalTicketsSoled += 1;
+        System.out.println("TotalTicketsSoled = " + TotalTicketsSoled);
         sendTicketCount();
         return removeTickets();
     }
     private void sendTicketCount() {
+        System.out.println("TotalTicketsReleaseByVender from send method"+TotalTicketsReleaseByVender);
+        int TotalTicketsReleaseByVenders = TotalTicketsReleaseByVender;
+
         for (WebSocket conn : webSocketServer.getConnections()) {
-            conn.send("Current Ticket Count: " + tickets.size());
+
+            List<Object> dataList = new ArrayList<>();
+            dataList.add(tickets.size());
+            dataList.add(TotalTicketsReleaseByVenders);
+            dataList.add(TotalTicketsSoled);
+
+            String jsonData = new Gson().toJson(dataList);
+
+            conn.send(jsonData);
         }
     }
 }

@@ -1190,3 +1190,554 @@
 2024-12-10T08:51:41.764703: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
 2024-12-10T08:51:41.765031: No tickets! Customer is waiting..
 2024-12-10T08:51:41.765261: No tickets! Customer is waiting..
+2024-12-11T15:46:51.096204: Enter the total number of tickets :
+2024-12-11T15:46:57.374320: Enter the ticket release rate:
+2024-12-11T15:46:59.626362: Enter the customer retrieval rate :
+2024-12-11T15:47:02.615171: Enter maximum ticket capacity:
+2024-12-11T15:47:05.236513: Enter the quantity of tickets a customer can retrieve at a time: 
+2024-12-11T15:47:06.897978: Total Ticket Amount: 100
+2024-12-11T15:47:06.898336: Ticket Release Rate: 13
+2024-12-11T15:47:06.898548: Customer Retrieval Rate: 2
+2024-12-11T15:47:06.898759: Maximum Ticket Capacity: 100
+2024-12-11T15:47:06.898947: Ticket Quantity per customer: 100
+2024-12-11T15:47:06.919895: No tickets! Customer is waiting..
+2024-12-11T15:47:06.920468: No tickets! Customer is waiting..
+2024-12-11T15:47:06.923606: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:47:06.924141: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-11T15:47:06.924504: Ticket added by - Vendor Id:0 - current size is - 3
+2024-12-11T15:47:06.928470: Ticket bought by - Customer Id:1 - current size is - 2 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:06.928736: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:06.928851: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:06.928935: No tickets! Customer is waiting..
+2024-12-11T15:47:06.929057: No tickets! Customer is waiting..
+2024-12-11T15:47:19.926535: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:47:19.929100: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:19.929544: No tickets! Customer is waiting..
+2024-12-11T15:47:19.929818: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:47:19.930105: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-11T15:47:19.930459: Ticket bought by - Customer Id:0 - current size is - 1 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:19.930824: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:19.931070: No tickets! Customer is waiting..
+2024-12-11T15:47:19.931308: No tickets! Customer is waiting..
+2024-12-11T15:47:32.931623: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:47:32.934048: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:32.934509: No tickets! Customer is waiting..
+2024-12-11T15:47:32.934777: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:47:32.935091: Ticket added by - Vendor Id:0 - current size is - 2
+2024-12-11T15:47:32.935427: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:32.935684: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:32.935960: No tickets! Customer is waiting..
+2024-12-11T15:47:32.936192: No tickets! Customer is waiting..
+2024-12-11T15:47:45.935288: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:47:45.936896: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:45.937223: No tickets! Customer is waiting..
+2024-12-11T15:47:45.937704: No tickets! Customer is waiting..
+2024-12-11T15:47:45.939291: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:47:45.939578: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:45.939693: No tickets! Customer is waiting..
+2024-12-11T15:47:45.939788: No tickets! Customer is waiting..
+2024-12-11T15:47:45.939981: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:47:45.940115: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:45.940279: No tickets! Customer is waiting..
+2024-12-11T15:47:45.940460: No tickets! Customer is waiting..
+2024-12-11T15:47:58.940334: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:47:58.942489: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:58.942720: No tickets! Customer is waiting..
+2024-12-11T15:47:58.942886: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:47:58.943055: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:58.943173: No tickets! Customer is waiting..
+2024-12-11T15:47:58.943336: No tickets! Customer is waiting..
+2024-12-11T15:47:58.944817: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:47:58.945123: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:47:58.945323: No tickets! Customer is waiting..
+2024-12-11T15:47:58.945451: No tickets! Customer is waiting..
+2024-12-11T15:48:11.948334: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:48:11.950737: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:11.951171: No tickets! Customer is waiting..
+2024-12-11T15:48:11.951437: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:48:11.951652: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-11T15:48:11.951925: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:11.952138: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:11.952336: No tickets! Customer is waiting..
+2024-12-11T15:48:11.952513: No tickets! Customer is waiting..
+2024-12-11T15:48:24.951709: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:48:25.008105: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:25.008617: No tickets! Customer is waiting..
+2024-12-11T15:48:25.008794: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:48:25.009202: Ticket added by - Vendor Id:1 - current size is - 2
+2024-12-11T15:48:25.009544: Ticket bought by - Customer Id:0 - current size is - 1 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:25.009864: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:25.010137: No tickets! Customer is waiting..
+2024-12-11T15:48:25.010278: No tickets! Customer is waiting..
+2024-12-11T15:48:38.013533: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:48:38.018774: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 8, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:38.020383: No tickets! Customer is waiting..
+2024-12-11T15:48:38.020972: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:48:38.021915: Ticket added by - Vendor Id:1 - current size is - 2
+2024-12-11T15:48:38.022800: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 8, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:38.023601: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 8, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:38.024161: No tickets! Customer is waiting..
+2024-12-11T15:48:38.024510: No tickets! Customer is waiting..
+2024-12-11T15:48:51.023933: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:48:51.028233: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 9, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:51.029288: No tickets! Customer is waiting..
+2024-12-11T15:48:51.029638: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:48:51.030353: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-11T15:48:51.031326: Ticket bought by - Customer Id:0 - current size is - 1 -: Ticket is - Ticket (ticketId = 9, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:51.032316: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 9, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:48:51.033117: No tickets! Customer is waiting..
+2024-12-11T15:48:51.034163: No tickets! Customer is waiting..
+2024-12-11T15:49:04.033125: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:49:04.039220: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 10, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:04.040407: No tickets! Customer is waiting..
+2024-12-11T15:49:04.040827: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:49:04.041639: Ticket added by - Vendor Id:1 - current size is - 2
+2024-12-11T15:49:04.042779: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 10, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:04.043730: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 10, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:04.044562: No tickets! Customer is waiting..
+2024-12-11T15:49:04.044966: No tickets! Customer is waiting..
+2024-12-11T15:49:17.041614: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:49:17.043180: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 11, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:17.043436: No tickets! Customer is waiting..
+2024-12-11T15:49:17.043627: No tickets! Customer is waiting..
+2024-12-11T15:49:17.044081: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:49:17.044456: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 11, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:17.044755: No tickets! Customer is waiting..
+2024-12-11T15:49:17.045023: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:49:17.045361: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 11, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:17.045670: No tickets! Customer is waiting..
+2024-12-11T15:49:17.045942: No tickets! Customer is waiting..
+2024-12-11T15:49:30.048262: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:49:30.051046: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 12, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:30.051717: No tickets! Customer is waiting..
+2024-12-11T15:49:30.052138: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:49:30.052544: Ticket added by - Vendor Id:1 - current size is - 2
+2024-12-11T15:49:30.053019: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 12, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:30.053505: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 12, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:30.053901: No tickets! Customer is waiting..
+2024-12-11T15:49:30.054268: No tickets! Customer is waiting..
+2024-12-11T15:49:43.052455: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:49:43.055189: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 13, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:43.055874: No tickets! Customer is waiting..
+2024-12-11T15:49:43.056315: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:49:43.056722: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 13, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:43.057127: No tickets! Customer is waiting..
+2024-12-11T15:49:43.057490: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:49:43.057925: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 13, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:43.058273: No tickets! Customer is waiting..
+2024-12-11T15:49:43.058596: No tickets! Customer is waiting..
+2024-12-11T15:49:56.057707: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:49:56.060635: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 14, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:56.061245: No tickets! Customer is waiting..
+2024-12-11T15:49:56.061621: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:49:56.062162: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 14, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:56.062579: No tickets! Customer is waiting..
+2024-12-11T15:49:56.062932: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:49:56.063292: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 14, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:49:56.063628: No tickets! Customer is waiting..
+2024-12-11T15:49:56.063937: No tickets! Customer is waiting..
+2024-12-11T15:50:09.065409: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:50:09.066660: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 15, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:09.067069: No tickets! Customer is waiting..
+2024-12-11T15:50:09.067427: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:50:09.067795: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 15, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:09.068393: No tickets! Customer is waiting..
+2024-12-11T15:50:09.068795: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:50:09.069035: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 15, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:09.069231: No tickets! Customer is waiting..
+2024-12-11T15:50:09.069390: No tickets! Customer is waiting..
+2024-12-11T15:50:22.071234: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:50:22.074809: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 16, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:22.075493: No tickets! Customer is waiting..
+2024-12-11T15:50:22.075981: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:50:22.076309: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-11T15:50:22.076710: Ticket bought by - Customer Id:0 - current size is - 1 -: Ticket is - Ticket (ticketId = 16, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:22.077053: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 16, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:22.077359: No tickets! Customer is waiting..
+2024-12-11T15:50:22.077631: No tickets! Customer is waiting..
+2024-12-11T15:50:35.078578: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:50:35.079630: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 17, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:35.079758: No tickets! Customer is waiting..
+2024-12-11T15:50:35.079874: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:50:35.079980: Ticket added by - Vendor Id:0 - current size is - 2
+2024-12-11T15:50:35.080102: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 17, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:35.080261: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 17, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:35.080373: No tickets! Customer is waiting..
+2024-12-11T15:50:35.080457: No tickets! Customer is waiting..
+2024-12-11T15:50:48.084660: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T15:50:48.086942: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 18, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:48.087484: No tickets! Customer is waiting..
+2024-12-11T15:50:48.087776: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:50:48.088101: Ticket added by - Vendor Id:0 - current size is - 2
+2024-12-11T15:50:48.088492: Ticket bought by - Customer Id:0 - current size is - 1 -: Ticket is - Ticket (ticketId = 18, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:48.088796: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 18, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:50:48.089052: No tickets! Customer is waiting..
+2024-12-11T15:50:48.089266: No tickets! Customer is waiting..
+2024-12-11T15:51:01.090122: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T15:51:01.091660: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 19, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:51:01.091971: No tickets! Customer is waiting..
+2024-12-11T15:51:01.092217: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T15:51:01.092621: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-11T15:51:01.092928: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 19, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:51:01.093120: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 19, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T15:51:01.093296: No tickets! Customer is waiting..
+2024-12-11T15:51:01.093436: No tickets! Customer is waiting..
+2024-12-11T16:11:37.689405: Enter the total number of tickets :
+2024-12-11T16:11:41.862286: Enter the ticket release rate:
+2024-12-11T16:11:43.623635: Enter the customer retrieval rate :
+2024-12-11T16:11:45.228120: Enter maximum ticket capacity:
+2024-12-11T16:11:46.893534: Enter the quantity of tickets a customer can retrieve at a time: 
+2024-12-11T16:11:47.921172: Total Ticket Amount: 100
+2024-12-11T16:11:47.921722: Ticket Release Rate: 15
+2024-12-11T16:11:47.922072: Customer Retrieval Rate: 2
+2024-12-11T16:11:47.922420: Maximum Ticket Capacity: 100
+2024-12-11T16:11:47.922737: Ticket Quantity per customer: 100
+2024-12-11T16:11:47.948829: No tickets! Customer is waiting..
+2024-12-11T16:11:47.951335: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:11:47.957029: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:11:47.957371: No tickets! Customer is waiting..
+2024-12-11T16:11:47.957531: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:11:47.957769: Ticket added by - Vendor Id:1 - current size is - 2
+2024-12-11T16:11:47.958011: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:11:47.958161: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:11:47.958287: No tickets! Customer is waiting..
+2024-12-11T16:11:47.958431: No tickets! Customer is waiting..
+2024-12-11T16:12:02.956814: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:12:02.959669: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:02.960187: No tickets! Customer is waiting..
+2024-12-11T16:12:02.960536: No tickets! Customer is waiting..
+2024-12-11T16:12:02.962405: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:12:02.962800: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:02.963258: No tickets! Customer is waiting..
+2024-12-11T16:12:02.963586: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:12:02.963954: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:02.964377: No tickets! Customer is waiting..
+2024-12-11T16:12:02.964690: No tickets! Customer is waiting..
+2024-12-11T16:12:17.960647: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:12:17.961929: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:17.962097: No tickets! Customer is waiting..
+2024-12-11T16:12:17.962204: No tickets! Customer is waiting..
+2024-12-11T16:12:17.964519: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:12:17.964749: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:17.964853: No tickets! Customer is waiting..
+2024-12-11T16:12:17.964953: No tickets! Customer is waiting..
+2024-12-11T16:12:17.968505: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:12:17.968820: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:17.968982: No tickets! Customer is waiting..
+2024-12-11T16:12:17.969148: No tickets! Customer is waiting..
+2024-12-11T16:12:32.966645: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:12:32.968322: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:32.968611: No tickets! Customer is waiting..
+2024-12-11T16:12:32.968838: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:12:32.969117: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:32.969563: No tickets! Customer is waiting..
+2024-12-11T16:12:32.969802: No tickets! Customer is waiting..
+2024-12-11T16:12:32.973469: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:12:32.973834: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:32.974191: No tickets! Customer is waiting..
+2024-12-11T16:12:32.974405: No tickets! Customer is waiting..
+2024-12-11T16:12:47.973164: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:12:47.974843: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:47.975701: No tickets! Customer is waiting..
+2024-12-11T16:12:47.976561: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:12:47.977290: Ticket added by - Vendor Id:0 - current size is - 2
+2024-12-11T16:12:47.977796: Ticket bought by - Customer Id:0 - current size is - 1 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:47.978117: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:12:47.978401: No tickets! Customer is waiting..
+2024-12-11T16:12:47.978650: No tickets! Customer is waiting..
+2024-12-11T16:13:02.980252: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:13:02.983592: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:02.984242: No tickets! Customer is waiting..
+2024-12-11T16:13:02.984510: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:13:02.984853: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:02.985194: No tickets! Customer is waiting..
+2024-12-11T16:13:02.985428: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:13:02.985697: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:02.986109: No tickets! Customer is waiting..
+2024-12-11T16:13:02.986523: No tickets! Customer is waiting..
+2024-12-11T16:13:17.987907: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:13:17.991812: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:17.992144: No tickets! Customer is waiting..
+2024-12-11T16:13:17.992326: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:13:17.992529: Ticket added by - Vendor Id:0 - current size is - 2
+2024-12-11T16:13:17.992752: Ticket bought by - Customer Id:0 - current size is - 1 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:17.992975: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:17.993149: No tickets! Customer is waiting..
+2024-12-11T16:13:17.993315: No tickets! Customer is waiting..
+2024-12-11T16:13:32.996729: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:13:32.998443: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 8, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:32.998760: No tickets! Customer is waiting..
+2024-12-11T16:13:32.998941: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:13:32.999145: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-11T16:13:32.999370: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 8, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:32.999670: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 8, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:32.999874: No tickets! Customer is waiting..
+2024-12-11T16:13:33.000032: No tickets! Customer is waiting..
+2024-12-11T16:13:48.000239: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:13:48.001313: Ticket added by - Vendor Id:1 - current size is - 2
+2024-12-11T16:13:48.001827: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 9, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:48.002675: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 9, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:48.003137: No tickets! Customer is waiting..
+2024-12-11T16:13:48.003551: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:13:48.004033: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 9, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:13:48.004438: No tickets! Customer is waiting..
+2024-12-11T16:13:48.004761: No tickets! Customer is waiting..
+2024-12-11T16:14:03.002562: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:14:03.004906: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 10, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:14:03.005412: No tickets! Customer is waiting..
+2024-12-11T16:14:03.005785: No tickets! Customer is waiting..
+2024-12-11T16:14:03.006250: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:14:03.006723: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 10, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:14:03.007249: No tickets! Customer is waiting..
+2024-12-11T16:14:03.007644: No tickets! Customer is waiting..
+2024-12-11T16:14:03.008650: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:14:03.009123: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 10, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:14:03.009671: No tickets! Customer is waiting..
+2024-12-11T16:14:03.010093: No tickets! Customer is waiting..
+2024-12-11T16:14:18.012233: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:14:18.018792: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 11, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:14:18.019282: No tickets! Customer is waiting..
+2024-12-11T16:14:18.019797: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:14:18.020392: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-11T16:14:18.021171: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 11, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:14:18.021380: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 11, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:14:18.021488: No tickets! Customer is waiting..
+2024-12-11T16:14:18.021614: No tickets! Customer is waiting..
+2024-12-11T16:14:33.020296: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:14:33.022357: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 12, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:14:33.022787: No tickets! Customer is waiting..
+2024-12-11T16:14:33.023023: No tickets! Customer is waiting..
+2024-12-11T16:14:33.024753: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:14:33.025044: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 12, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:14:33.025296: No tickets! Customer is waiting..
+2024-12-11T16:14:33.025482: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:14:33.025665: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 12, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:14:33.025799: No tickets! Customer is waiting..
+2024-12-11T16:14:33.025917: No tickets! Customer is waiting..
+2024-12-11T16:14:51.597783: Enter the total number of tickets :
+2024-12-11T16:14:59.266509: Enter the ticket release rate:
+2024-12-11T16:15:02.347987: Enter the customer retrieval rate :
+2024-12-11T16:15:03.673483: Enter maximum ticket capacity:
+2024-12-11T16:15:05.111050: Enter the quantity of tickets a customer can retrieve at a time: 
+2024-12-11T16:15:06.023313: Total Ticket Amount: 100
+2024-12-11T16:15:06.023744: Ticket Release Rate: 16
+2024-12-11T16:15:06.024077: Customer Retrieval Rate: 2
+2024-12-11T16:15:06.024420: Maximum Ticket Capacity: 100
+2024-12-11T16:15:06.024744: Ticket Quantity per customer: 100
+2024-12-11T16:15:06.054068: No tickets! Customer is waiting..
+2024-12-11T16:15:06.057564: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:15:06.063039: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:15:06.063520: No tickets! Customer is waiting..
+2024-12-11T16:15:06.063691: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:15:06.063870: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:15:06.063999: No tickets! Customer is waiting..
+2024-12-11T16:15:06.064120: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:15:06.064319: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:15:06.064491: No tickets! Customer is waiting..
+2024-12-11T16:15:06.064603: No tickets! Customer is waiting..
+2024-12-11T16:52:31.415095: Enter the total number of tickets :
+2024-12-11T16:52:34.403256: Enter the ticket release rate:
+2024-12-11T16:52:35.436389: Enter the customer retrieval rate :
+2024-12-11T16:52:36.877468: Enter maximum ticket capacity:
+2024-12-11T16:52:38.249386: Enter the quantity of tickets a customer can retrieve at a time: 
+2024-12-11T16:52:39.439011: Total Ticket Amount: 100
+2024-12-11T16:52:39.439494: Ticket Release Rate: 12
+2024-12-11T16:52:39.439835: Customer Retrieval Rate: 2
+2024-12-11T16:52:39.440177: Maximum Ticket Capacity: 100
+2024-12-11T16:52:39.440496: Ticket Quantity per customer: 100
+2024-12-11T16:52:39.467044: No tickets! Customer is waiting..
+2024-12-11T16:52:39.467576: No tickets! Customer is waiting..
+2024-12-11T16:52:39.470751: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:52:39.471237: Ticket added by - Vendor Id:1 - current size is - 2
+2024-12-11T16:52:39.471473: Ticket added by - Vendor Id:0 - current size is - 3
+2024-12-11T16:52:39.477032: Ticket bought by - Customer Id:1 - current size is - 2 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:52:39.477419: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:52:39.477606: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:52:39.477747: No tickets! Customer is waiting..
+2024-12-11T16:52:39.477907: No tickets! Customer is waiting..
+2024-12-11T16:52:51.476371: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:52:51.478002: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:52:51.478651: No tickets! Customer is waiting..
+2024-12-11T16:52:51.479145: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:52:51.479660: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-11T16:52:51.479977: Ticket bought by - Customer Id:0 - current size is - 1 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:52:51.480264: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:52:51.480552: No tickets! Customer is waiting..
+2024-12-11T16:52:51.480782: No tickets! Customer is waiting..
+2024-12-11T16:53:03.477859: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:53:03.478875: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:03.479253: No tickets! Customer is waiting..
+2024-12-11T16:53:03.479522: No tickets! Customer is waiting..
+2024-12-11T16:53:03.480674: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:53:03.481123: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:03.481486: No tickets! Customer is waiting..
+2024-12-11T16:53:03.481745: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:53:03.482033: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:03.482369: No tickets! Customer is waiting..
+2024-12-11T16:53:03.482584: No tickets! Customer is waiting..
+2024-12-11T16:53:15.484660: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:53:15.487759: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:15.488186: No tickets! Customer is waiting..
+2024-12-11T16:53:15.488441: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:53:15.488765: Ticket added by - Vendor Id:0 - current size is - 2
+2024-12-11T16:53:15.489137: Ticket bought by - Customer Id:0 - current size is - 1 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:15.489479: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:15.489827: No tickets! Customer is waiting..
+2024-12-11T16:53:15.490563: No tickets! Customer is waiting..
+2024-12-11T16:53:27.492437: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:53:27.494987: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:27.495444: No tickets! Customer is waiting..
+2024-12-11T16:53:27.495734: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:53:27.496077: Ticket added by - Vendor Id:1 - current size is - 2
+2024-12-11T16:53:27.496508: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:27.496842: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:27.497087: No tickets! Customer is waiting..
+2024-12-11T16:53:27.497313: No tickets! Customer is waiting..
+2024-12-11T16:53:39.500188: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:53:39.502972: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:39.503412: No tickets! Customer is waiting..
+2024-12-11T16:53:39.503705: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:53:39.504154: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:39.504552: No tickets! Customer is waiting..
+2024-12-11T16:53:39.504808: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:53:39.505129: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:39.505446: No tickets! Customer is waiting..
+2024-12-11T16:53:39.505679: No tickets! Customer is waiting..
+2024-12-11T16:53:51.507776: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:53:51.509183: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:51.509317: No tickets! Customer is waiting..
+2024-12-11T16:53:51.509398: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:53:51.509527: Ticket added by - Vendor Id:1 - current size is - 2
+2024-12-11T16:53:51.509670: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:51.509816: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:53:51.509910: No tickets! Customer is waiting..
+2024-12-11T16:53:51.510097: No tickets! Customer is waiting..
+2024-12-11T16:54:05.884635: Enter the total number of tickets :
+2024-12-11T16:54:08.636407: Enter the ticket release rate:
+2024-12-11T16:54:10.031235: Enter the customer retrieval rate :
+2024-12-11T16:54:11.703329: Enter maximum ticket capacity:
+2024-12-11T16:54:12.866532: Enter the quantity of tickets a customer can retrieve at a time: 
+2024-12-11T16:54:13.843105: Total Ticket Amount: 100
+2024-12-11T16:54:13.843616: Ticket Release Rate: 12
+2024-12-11T16:54:13.843961: Customer Retrieval Rate: 2
+2024-12-11T16:54:13.844280: Maximum Ticket Capacity: 100
+2024-12-11T16:54:13.844589: Ticket Quantity per customer: 100
+2024-12-11T16:54:13.870866: No tickets! Customer is waiting..
+2024-12-11T16:54:13.873480: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:54:13.879204: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:13.879569: No tickets! Customer is waiting..
+2024-12-11T16:54:13.879711: No tickets! Customer is waiting..
+2024-12-11T16:54:13.879913: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:54:13.880106: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-11T16:54:13.880347: Ticket bought by - Customer Id:0 - current size is - 1 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:13.880512: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:13.880668: No tickets! Customer is waiting..
+2024-12-11T16:54:13.880788: No tickets! Customer is waiting..
+2024-12-11T16:54:25.879559: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:54:25.882499: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:25.882949: No tickets! Customer is waiting..
+2024-12-11T16:54:25.883292: No tickets! Customer is waiting..
+2024-12-11T16:54:25.884856: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:54:25.885373: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:25.885697: No tickets! Customer is waiting..
+2024-12-11T16:54:25.885940: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:54:25.886281: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 2, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:25.886588: No tickets! Customer is waiting..
+2024-12-11T16:54:25.887026: No tickets! Customer is waiting..
+2024-12-11T16:54:37.882203: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:54:37.884259: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:37.884965: No tickets! Customer is waiting..
+2024-12-11T16:54:37.885322: No tickets! Customer is waiting..
+2024-12-11T16:54:37.888409: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:54:37.888971: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:37.889234: No tickets! Customer is waiting..
+2024-12-11T16:54:37.889551: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:54:37.889816: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 3, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:37.890011: No tickets! Customer is waiting..
+2024-12-11T16:54:37.890175: No tickets! Customer is waiting..
+2024-12-11T16:54:49.888997: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:54:49.890097: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:49.890234: No tickets! Customer is waiting..
+2024-12-11T16:54:49.890330: No tickets! Customer is waiting..
+2024-12-11T16:54:49.893641: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:54:49.893829: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:49.893939: No tickets! Customer is waiting..
+2024-12-11T16:54:49.894018: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:54:49.894150: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 4, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:54:49.894291: No tickets! Customer is waiting..
+2024-12-11T16:54:49.894390: No tickets! Customer is waiting..
+2024-12-11T16:55:01.895058: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:55:01.897417: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:01.898009: No tickets! Customer is waiting..
+2024-12-11T16:55:01.898267: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:55:01.898604: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:01.898896: No tickets! Customer is waiting..
+2024-12-11T16:55:01.899186: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:55:01.899479: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 5, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:01.899831: No tickets! Customer is waiting..
+2024-12-11T16:55:01.900023: No tickets! Customer is waiting..
+2024-12-11T16:55:13.901701: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:55:13.904168: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:13.905021: No tickets! Customer is waiting..
+2024-12-11T16:55:13.905400: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:55:13.905740: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:13.905966: No tickets! Customer is waiting..
+2024-12-11T16:55:13.906168: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:55:13.906435: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 6, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:13.906692: No tickets! Customer is waiting..
+2024-12-11T16:55:13.906956: No tickets! Customer is waiting..
+2024-12-11T16:55:25.905503: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:55:25.906677: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:25.906813: No tickets! Customer is waiting..
+2024-12-11T16:55:25.906914: No tickets! Customer is waiting..
+2024-12-11T16:55:25.910430: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:55:25.910573: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:25.910666: No tickets! Customer is waiting..
+2024-12-11T16:55:25.910739: No tickets! Customer is waiting..
+2024-12-11T16:55:25.911124: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:55:25.916154: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 7, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:25.916353: No tickets! Customer is waiting..
+2024-12-11T16:55:25.916445: No tickets! Customer is waiting..
+2024-12-11T16:55:37.912088: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:55:37.914513: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 8, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:37.914962: No tickets! Customer is waiting..
+2024-12-11T16:55:37.915224: No tickets! Customer is waiting..
+2024-12-11T16:55:37.915427: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:55:37.915748: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 8, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:37.915950: No tickets! Customer is waiting..
+2024-12-11T16:55:37.916119: No tickets! Customer is waiting..
+2024-12-11T16:55:37.920881: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:55:37.921178: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 8, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:37.921404: No tickets! Customer is waiting..
+2024-12-11T16:55:37.921591: No tickets! Customer is waiting..
+2024-12-11T16:55:49.919101: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:55:49.920362: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 9, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:49.920669: No tickets! Customer is waiting..
+2024-12-11T16:55:49.920820: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:55:49.921002: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 9, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:49.921133: No tickets! Customer is waiting..
+2024-12-11T16:55:49.921244: No tickets! Customer is waiting..
+2024-12-11T16:55:49.922884: Ticket added by - Vendor Id:2 - current size is - 1
+2024-12-11T16:55:49.923065: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 9, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:55:49.923207: No tickets! Customer is waiting..
+2024-12-11T16:55:49.923353: No tickets! Customer is waiting..
+2024-12-11T16:55:56.856467: Enter the total number of tickets :
+2024-12-11T16:56:01.028554: Enter the ticket release rate:
+2024-12-11T16:56:02.732038: Enter the customer retrieval rate :
+2024-12-11T16:56:03.600698: Enter maximum ticket capacity:
+2024-12-11T16:56:04.975348: Enter the quantity of tickets a customer can retrieve at a time: 
+2024-12-11T16:56:06.469804: Total Ticket Amount: 100
+2024-12-11T16:56:06.470273: Ticket Release Rate: 111
+2024-12-11T16:56:06.470609: Customer Retrieval Rate: 1
+2024-12-11T16:56:06.470946: Maximum Ticket Capacity: 100
+2024-12-11T16:56:06.471297: Ticket Quantity per customer: 100
+2024-12-11T16:56:06.497194: No tickets! Customer is waiting..
+2024-12-11T16:56:06.499778: Ticket added by - Vendor Id:1 - current size is - 1
+2024-12-11T16:56:06.505438: Ticket bought by - Customer Id:0 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:56:06.505823: No tickets! Customer is waiting..
+2024-12-11T16:56:06.506005: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-11T16:56:06.506228: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-11T16:56:06.506417: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:56:06.506562: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-11T16:56:06.506692: No tickets! Customer is waiting..
+2024-12-11T16:56:06.506813: No tickets! Customer is waiting..

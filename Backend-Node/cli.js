@@ -13,7 +13,7 @@ export async function connectCLI(
 ) {
   javaCLI = spawn("java", [
     "-jar",
-    "../CLI-java/new/out/artifacts/new_jar2/new.jar",
+    "../CLI-java/new/out/artifacts/new_jar3/new.jar",
     totalTickets,
     ticketReleaseRate,
     customerRetrievalRate,

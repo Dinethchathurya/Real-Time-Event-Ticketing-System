@@ -30,7 +30,7 @@ function EventDetails() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log("Form data:", data);
+
     axios
       .post("http://localhost:5001/start", data)
       .then((response) => {
@@ -38,6 +38,7 @@ function EventDetails() {
       })
       .then(() => {
         websocket();
+        realTimeDatawebsocket();
       })
       .catch((error) => {
         console.error("Error in start request:", error);
@@ -45,7 +46,7 @@ function EventDetails() {
   };
 
   function websocket() {
-    console.log("called");
+
     const socket = new WebSocket("ws://localhost:8083");
 
     socket.onopen = () => {
@@ -53,14 +54,15 @@ function EventDetails() {
       socket.send("Hello from the React client!");
     };
     socket.onmessage = (event) => {
+
       if (event.data instanceof Blob) {
         const reader = new FileReader();
         reader.onload = () => {
-          setMessages((prevMessages) => [...prevMessages, reader.result]); // Append new message to the existing array
+          setMessages((prevMessages) => [...prevMessages, reader.result]); 
         };
         reader.readAsText(event.data);
       } else {
-        setMessages((prevMessages) => [...prevMessages, event.data]); // Append new message if it's already a string
+        setMessages((prevMessages) => [...prevMessages, event.data]); 
       }
     };
 
@@ -85,11 +87,16 @@ function EventDetails() {
       if (event.data instanceof Blob) {
         const reader = new FileReader();
         reader.onload = () => {
-          setMessages(() => [ reader.result]); // Append new message to the existing array
+          console.log(reader.result);
+          const data = JSON.parse(reader.result);
+          setCurrentTicketAvailability(() => data[0]); 
+          setTotalTicketsToRelease(() => data[1]); 
+          setTotalTicketsSold(() => data[2]); 
         };
         reader.readAsText(event.data);
       } else {
-        setMessages(() => [event.data]); // Append new message if it's already a string
+        console.log(event.data);
+        //setMessages(() => [event.data]); 
       }
     };
 
