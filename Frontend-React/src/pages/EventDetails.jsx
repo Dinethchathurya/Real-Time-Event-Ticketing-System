@@ -4,8 +4,16 @@ import EventDetailsCard from "../Components/EventDetailsCard";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
-function stop(event) {
+function stop() {
   console.log("cliked");
+  axios
+      .post("http://localhost:5001/stop")
+      .then((response) => {
+        console.log("Start response:", response.data);
+      })
+      .catch((error) => {
+        console.error("Error in start request:", error);
+      });
 }
 
 function EventDetails() {

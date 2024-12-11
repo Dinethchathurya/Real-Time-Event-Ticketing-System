@@ -1,5 +1,5 @@
 import express from "express";
-import {connectCLI} from "./cli.js";
+import {connectCLI, stopCLI} from "./cli.js";
 import {connectWebSocket} from "./cli_websocket.js";
 import cors from "cors";
 
@@ -18,13 +18,9 @@ app.post("/start", async (req, res) => {
   console.log("backend node is called from react");
 });
 
-app.post("/start", async (req, res) => {
-  console.log("backend node is called from react");
-  const {numberOfTickets, ticketReleaseRate, customerRetrievalRate, maxTicketCapacity ,ticketQuantity} = req.body;
-  await connectCLI(parseInt(numberOfTickets), parseInt(ticketReleaseRate), parseInt(customerRetrievalRate), parseInt(maxTicketCapacity),parseInt(ticketQuantity));
-  connectWebSocket();
-  res.send("Hello, World!");
-  console.log("backend node is called from react");
+app.post("/stop", async (req, res) => {
+  stopCLI();
+  res.send("CLI Stoped");
 });
 
 
