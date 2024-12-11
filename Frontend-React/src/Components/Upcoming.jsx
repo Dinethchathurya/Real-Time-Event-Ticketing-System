@@ -9,6 +9,7 @@ function Upcoming() {
 
         <div className="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 gap-4 c">
           <EventCard
+            key={1}
             image="https://images.pexels.com/photos/167514/pexels-photo-167514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             title="Musical Show"
             price="200"

@@ -19,9 +19,9 @@ function stop() {
 
 function EventDetails() {
   const [messages, setMessages] = useState([]);
-  const [currentTicketAvailability, setCurrentTicketAvailability] = useState('30');
-  const [totalTicketsToRelease, setTotalTicketsToRelease] = useState('30');
-  const [totalTicketsSold, setTotalTicketsSold] = useState('30');
+  const [currentTicketAvailability, setCurrentTicketAvailability] = useState('0');
+  const [totalTicketsToRelease, setTotalTicketsToRelease] = useState('0');
+  const [totalTicketsSold, setTotalTicketsSold] = useState('0');
 
   const {
     register,
