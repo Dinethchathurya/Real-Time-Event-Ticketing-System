@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function EventCard({ image, title, price, location }) {
   return (
@@ -27,9 +28,11 @@ function EventCard({ image, title, price, location }) {
           <p>{location}</p>
         </div>
         <div className="card-actions justify-end">
-          <button className="btn rounded-full border-gray-200 h-5 w-32 text-primary">
-            Buy Now
-          </button>
+          <Link to="/eventdetails">
+            <button className="btn rounded-full border-gray-200 h-5 w-32 text-primary">
+              Buy Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>

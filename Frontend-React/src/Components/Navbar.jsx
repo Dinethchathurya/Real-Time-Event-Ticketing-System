@@ -13,7 +13,9 @@ function Navbar() {
           {/* Logo and Brand Name */}
           <div className="flex items-end">
             <img src={Logo} alt="Logo" className="h-10 w-auto mb-1" />
-            <a href="/" className=" text-2xl font-bold ">EVENTS</a>
+            <a href="/" className=" text-2xl font-bold ">
+              EVENTS
+            </a>
           </div>
 
           {/* Hamburger Menu (Visible on Mobile) */}
@@ -42,18 +44,25 @@ function Navbar() {
             {/* Navigation Links (Desktop) */}
 
             {navLinks.map((link) => (
-              
-                <a key={link.id} href={link.path} className="hover:underline">{link.label}</a>
-              
+              <a key={link.id} href={link.path} className="hover:underline">
+                {link.label}
+              </a>
             ))}
+            <Link to="/login">
+              <button className="btn btn-primary px-6 w-40 font-regular ">
+                Login
+              </button>
+            </Link>
           </div>
-          
+
         </div>
       </div>
 
       {/* Mobile Right-Side Sliding Drawer */}
       <div
-        className={`fixed top-0 right-0 w-3/4 h-full bg-white shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 z-10`}
+        className={`fixed top-0 right-0 w-3/4 h-full bg-white shadow-lg transform ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 z-10`}
       >
         <div className="flex justify-end p-4">
           <button onClick={() => setIsOpen(false)} className="text-gray-800">
@@ -75,7 +84,13 @@ function Navbar() {
         </div>
         <div className="flex flex-col items-left space-y-6 mt-10 px-5">
           {navLinks.map((link) => (
-            <a key={link.id} href={link.path} className="hover:underline active:text-primary ">{link.label}</a>
+            <a
+              key={link.id}
+              href={link.path}
+              className="hover:underline active:text-primary "
+            >
+              {link.label}
+            </a>
           ))}
           {/* <a href="#" className="btn btn-primary px-6 w-40">
             Sign Up
