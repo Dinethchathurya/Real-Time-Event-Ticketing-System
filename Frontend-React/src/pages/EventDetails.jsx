@@ -111,7 +111,7 @@ function EventDetails() {
       <div className="container mx-auto section_px">
         <div className="bg-white p-5">
           <div>
-            <h1 className="">Music Event</h1>
+            <h1 className="">RhythmFest Music Event</h1>
 
             <div className="flex flex-col lg:flex-row gap-6">
               <div className="w-full lg:w-2/3">
@@ -133,7 +133,7 @@ function EventDetails() {
                       incredible sense of accomplishment.
                     </p>
                     <h2 className="text-2xl mt-4">Ticket price</h2>
-                    <p className="text-xl font-normal text-primary">Rs 100</p>
+                    <p className="text-xl font-normal text-primary">Rs 1000</p>
                   </div>
                 </div>
                 <div>
@@ -176,7 +176,7 @@ function EventDetails() {
                 <div className="bg-secondary p-6 rounded-lg shadow-lg w-full text-white max-md:mb-10 mt-4">
                   <div>
                     <label htmlFor="name" className="block mb-1 underline">
-                      Configaration Form
+                      Configuration Form
                     </label>
                   </div>
                   <form onSubmit={handleSubmit(onSubmit)}>
@@ -191,7 +191,7 @@ function EventDetails() {
                       id="numberOfTickets"
                       placeholder="Total Number of Tickets"
                       {...register("numberOfTickets", {
-                        required: "Ticket quantity is required",
+                        required: "Total Ticket number is Required",
                         min: {
                           value: 1,
                           message: "Please enter a number grater than zero ",
@@ -215,7 +215,7 @@ function EventDetails() {
                       type="number"
                       id="ticketReleaseRate"
                       {...register("ticketReleaseRate", {
-                        required: "Ticket quantity is required",
+                        required: "Total Release Rate is Required",
                         min: {
                           value: 1,
                           message: "Please enter a number grater than zero .",
@@ -242,7 +242,7 @@ function EventDetails() {
                       id="customerRetrievalRate"
                       placeholder="Customer Retrieval Rate"
                       {...register("customerRetrievalRate", {
-                        required: "Ticket quantity is required",
+                        required: "Retrieval Rate is Required",
                         min: {
                           value: 1,
                           message: "Please enter a number grater than zero .",
@@ -268,7 +268,7 @@ function EventDetails() {
                       id="maxTicketCapacity"
                       placeholder="Max Ticket Capacity"
                       {...register("maxTicketCapacity", {
-                        required: "max Ticket Capacity is required",
+                        required: "Max Ticket Capacity is Required",
                         validate: (value, fromValues) => {
                           if (value <= 0) {
                             return "Please enter a number greater than zero";

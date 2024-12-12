@@ -11,7 +11,7 @@ function Event() {
           <EventCard
             image="https://images.pexels.com/photos/167514/pexels-photo-167514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             title="Musical Show"
-            price="200"
+            price="1000"
             location="Main Entrance"
           />
         </div>

@@ -2102,3 +2102,23 @@
 2024-12-11T21:08:11.039624: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 18, eventName = 'Music Event', ticketPrice = 1000)
 2024-12-11T21:08:11.039780: No tickets! Customer is waiting..
 2024-12-11T21:08:11.039938: No tickets! Customer is waiting..
+2024-12-12T10:11:16.581360: Enter the total number of tickets :
+2024-12-12T10:11:25.119955: Enter the ticket release rate:
+2024-12-12T10:11:28.299847: Enter the customer retrieval rate :
+2024-12-12T10:11:28.863678: Enter maximum ticket capacity:
+2024-12-12T10:11:30.339375: Enter the quantity of tickets a customer can retrieve at a time: 
+2024-12-12T10:11:31.395300: Total Ticket Amount: 100
+2024-12-12T10:11:31.395928: Ticket Release Rate: 13
+2024-12-12T10:11:31.396333: Customer Retrieval Rate: 2
+2024-12-12T10:11:31.396701: Maximum Ticket Capacity: 100
+2024-12-12T10:11:31.397062: Ticket Quantity per customer: 100
+2024-12-12T10:11:31.422886: No tickets! Customer is waiting..
+2024-12-12T10:11:31.423330: No tickets! Customer is waiting..
+2024-12-12T10:11:31.425933: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-12T10:11:31.426260: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-12T10:11:31.426451: Ticket added by - Vendor Id:1 - current size is - 3
+2024-12-12T10:11:31.431406: Ticket bought by - Customer Id:1 - current size is - 2 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-12T10:11:31.431649: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-12T10:11:31.431787: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-12T10:11:31.431897: No tickets! Customer is waiting..
+2024-12-12T10:11:31.432030: No tickets! Customer is waiting..
