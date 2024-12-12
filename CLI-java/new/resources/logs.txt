@@ -1,0 +1,25 @@
+2024-12-09T19:37:31.135788: Enter the total number of tickets :
+2024-12-09T19:37:40.586508: Enter the ticket release rate:
+2024-12-09T19:37:43.068570: Enter the customer retrieval rate :
+2024-12-09T19:37:44.205292: Enter maximum ticket capacity:
+2024-12-09T19:37:46.309411: Enter the quantity of tickets a customer can retrieve at a time: 
+2024-12-09T19:37:49.664694: Total Ticket Amount: 100
+2024-12-09T19:37:49.665439: Ticket Release Rate: 12
+2024-12-09T19:37:49.665829: Customer Retrieval Rate: 10
+2024-12-09T19:37:49.666142: Maximum Ticket Capacity: 100
+2024-12-09T19:37:49.666455: Ticket Quantity per customer: 3
+2024-12-09T19:37:49.669425: No tickets! Customer is waiting..
+2024-12-09T19:37:49.669828: No tickets! Customer is waiting..
+2024-12-09T19:37:49.673710: Ticket added by - Vendor Id:0 - current size is - 1
+2024-12-09T19:37:49.674020: Ticket added by - Vendor Id:2 - current size is - 2
+2024-12-09T19:37:49.674248: Ticket added by - Vendor Id:1 - current size is - 3
+2024-12-09T19:37:49.681004: Ticket bought by - Customer Id:1 - current size is - 2 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-09T19:37:49.681297: Ticket bought by - Customer Id:1 - current size is - 1 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-09T19:37:49.681477: Ticket bought by - Customer Id:1 - current size is - 0 -: Ticket is - Ticket (ticketId = 1, eventName = 'Music Event', ticketPrice = 1000)
+2024-12-09T19:37:49.681623: No tickets! Customer is waiting..
+2024-12-09T19:37:49.681771: No tickets! Customer is waiting..
+2024-12-09T20:13:33.123138: Enter the total number of tickets :
+2024-12-09T20:18:34.142471: Enter the total number of tickets :
+2024-12-09T20:33:47.339918: Enter the total number of tickets :
+2024-12-09T20:34:08.929526: Enter the total number of tickets :
+2024-12-09T21:05:56.288553: Enter the total number of tickets :
